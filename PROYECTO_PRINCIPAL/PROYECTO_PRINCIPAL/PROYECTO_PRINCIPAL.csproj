@@ -50,8 +50,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\Style.css" />
+    <Content Include="Presentacion\GestionActividades.aspx" />
+    <Content Include="Presentacion\GestionProyectos.aspx" />
+    <Content Include="Presentacion\GestionTareas.aspx" />
     <Content Include="Presentacion\Login.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -60,6 +66,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentacion\GestionActividades.aspx.cs">
+      <DependentUpon>GestionActividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionActividades.aspx.designer.cs">
+      <DependentUpon>GestionActividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\GestionProyectos.aspx.cs">
+      <DependentUpon>GestionProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionProyectos.aspx.designer.cs">
+      <DependentUpon>GestionProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\GestionTareas.aspx.cs">
+      <DependentUpon>GestionTareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionTareas.aspx.designer.cs">
+      <DependentUpon>GestionTareas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
