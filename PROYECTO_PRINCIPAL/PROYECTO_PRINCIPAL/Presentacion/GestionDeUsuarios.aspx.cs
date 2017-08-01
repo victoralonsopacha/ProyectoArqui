@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PROYECTO_PRINCIPAL.Presentacion
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class GestionDeUsuarios : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,12 @@ namespace PROYECTO_PRINCIPAL.Presentacion
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Server.Transfer("Pincipal.aspx");
+            Server.Transfer("NuevoUsuario.aspx");
+        }
+
+        protected void btnEditarUsuario_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("EditarUsuario.aspx");
         }
     }
 }

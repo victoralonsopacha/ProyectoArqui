@@ -54,10 +54,13 @@
     <Content Include="App_Themes\Tema1\tema1.css" />
     <Content Include="Presentacion\AsignarTarea.aspx" />
     <Content Include="Presentacion\CancelarProyecto.aspx" />
+    <Content Include="Presentacion\EditarUsuario.aspx" />
     <Content Include="Presentacion\EliminarActividad.aspx" />
     <Content Include="Presentacion\EliminarTarea.aspx" />
+    <Content Include="Presentacion\GestionDeUsuarios.aspx" />
     <Content Include="Presentacion\Login.aspx" />
     <Content Include="Presentacion\ModificarProyecto.aspx" />
+    <Content Include="Presentacion\NuevoUsuario.aspx" />
     <Content Include="Presentacion\Pincipal.aspx" />
     <Content Include="Presentacion\RegistrarActividad.aspx" />
     <Content Include="Presentacion\RegistrarProyecto.aspx" />
@@ -86,6 +89,13 @@
     </Compile>
     <Compile Include="Presentacion\CancelarProyecto.aspx.designer.cs">
       <DependentUpon>CancelarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\EliminarActividad.aspx.cs">
       <DependentUpon>EliminarActividad.aspx</DependentUpon>
@@ -122,6 +132,13 @@
     <Compile Include="Presentacion\GestionDeTareas.master.designer.cs">
       <DependentUpon>GestionDeTareas.master</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\GestionDeUsuarios.aspx.cs">
+      <DependentUpon>GestionDeUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeUsuarios.aspx.designer.cs">
+      <DependentUpon>GestionDeUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +152,13 @@
     </Compile>
     <Compile Include="Presentacion\ModificarProyecto.aspx.designer.cs">
       <DependentUpon>ModificarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Pincipal.aspx.cs">
       <DependentUpon>Pincipal.aspx</DependentUpon>

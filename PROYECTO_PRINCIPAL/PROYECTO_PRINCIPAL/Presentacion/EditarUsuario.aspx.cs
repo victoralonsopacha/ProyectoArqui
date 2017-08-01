@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace PROYECTO_PRINCIPAL.Presentacion
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class EditarUsuario : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnEditar_Click(object sender, EventArgs e)
         {
             Server.Transfer("Pincipal.aspx");
         }
