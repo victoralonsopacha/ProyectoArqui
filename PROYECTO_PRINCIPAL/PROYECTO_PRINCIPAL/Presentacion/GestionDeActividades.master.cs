@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PROYECTO_PRINCIPAL.Presentacion
 {
-    public partial class GestionActividades : System.Web.UI.Page
+    public partial class GestionDeActividades : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

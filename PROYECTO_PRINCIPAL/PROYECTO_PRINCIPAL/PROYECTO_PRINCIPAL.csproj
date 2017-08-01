@@ -50,11 +50,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\Style.css" />
-    <Content Include="Presentacion\GestionActividades.aspx" />
-    <Content Include="Presentacion\GestionProyectos.aspx" />
-    <Content Include="Presentacion\GestionTareas.aspx" />
+    <Content Include="App_Themes\Tema1\fondo.png" />
+    <Content Include="App_Themes\Tema1\tema1.css" />
+    <Content Include="Presentacion\AsignarTarea.aspx" />
+    <Content Include="Presentacion\CancelarProyecto.aspx" />
+    <Content Include="Presentacion\EliminarActividad.aspx" />
+    <Content Include="Presentacion\EliminarTarea.aspx" />
     <Content Include="Presentacion\Login.aspx" />
+    <Content Include="Presentacion\ModificarProyecto.aspx" />
+    <Content Include="Presentacion\Pincipal.aspx" />
+    <Content Include="Presentacion\RegistrarActividad.aspx" />
+    <Content Include="Presentacion\RegistrarProyecto.aspx" />
+    <Content Include="Presentacion\RegistrarTarea.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -66,26 +73,54 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentacion\GestionActividades.aspx.cs">
-      <DependentUpon>GestionActividades.aspx</DependentUpon>
+    <Compile Include="Presentacion\AsignarTarea.aspx.cs">
+      <DependentUpon>AsignarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\GestionActividades.aspx.designer.cs">
-      <DependentUpon>GestionActividades.aspx</DependentUpon>
+    <Compile Include="Presentacion\AsignarTarea.aspx.designer.cs">
+      <DependentUpon>AsignarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\GestionProyectos.aspx.cs">
-      <DependentUpon>GestionProyectos.aspx</DependentUpon>
+    <Compile Include="Presentacion\CancelarProyecto.aspx.cs">
+      <DependentUpon>CancelarProyecto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\GestionProyectos.aspx.designer.cs">
-      <DependentUpon>GestionProyectos.aspx</DependentUpon>
+    <Compile Include="Presentacion\CancelarProyecto.aspx.designer.cs">
+      <DependentUpon>CancelarProyecto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\GestionTareas.aspx.cs">
-      <DependentUpon>GestionTareas.aspx</DependentUpon>
+    <Compile Include="Presentacion\EliminarActividad.aspx.cs">
+      <DependentUpon>EliminarActividad.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\GestionTareas.aspx.designer.cs">
-      <DependentUpon>GestionTareas.aspx</DependentUpon>
+    <Compile Include="Presentacion\EliminarActividad.aspx.designer.cs">
+      <DependentUpon>EliminarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\EliminarTarea.aspx.cs">
+      <DependentUpon>EliminarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EliminarTarea.aspx.designer.cs">
+      <DependentUpon>EliminarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeActividades.master.cs">
+      <DependentUpon>GestionDeActividades.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeActividades.master.designer.cs">
+      <DependentUpon>GestionDeActividades.master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeProyectos.master.cs">
+      <DependentUpon>GestionDeProyectos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeProyectos.master.designer.cs">
+      <DependentUpon>GestionDeProyectos.master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeTareas.master.cs">
+      <DependentUpon>GestionDeTareas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\GestionDeTareas.master.designer.cs">
+      <DependentUpon>GestionDeTareas.master</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -94,12 +129,66 @@
     <Compile Include="Presentacion\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\ModificarProyecto.aspx.cs">
+      <DependentUpon>ModificarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ModificarProyecto.aspx.designer.cs">
+      <DependentUpon>ModificarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Pincipal.aspx.cs">
+      <DependentUpon>Pincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Pincipal.aspx.designer.cs">
+      <DependentUpon>Pincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarActividad.aspx.cs">
+      <DependentUpon>RegistrarActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarActividad.aspx.designer.cs">
+      <DependentUpon>RegistrarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarProyecto.aspx.cs">
+      <DependentUpon>RegistrarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarProyecto.aspx.designer.cs">
+      <DependentUpon>RegistrarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarTarea.aspx.cs">
+      <DependentUpon>RegistrarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\RegistrarTarea.aspx.designer.cs">
+      <DependentUpon>RegistrarTarea.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Comun\" />
     <Folder Include="Datos\" />
     <Folder Include="Negocio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\Principal.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\GestionDeActividades.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\GestionDeProyectos.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\GestionDeTareas.master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

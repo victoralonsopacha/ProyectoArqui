@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="PROYECTO_PRINCIPAL.Presentacion.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Principal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+  
+    <div id="cabecera">
+        <div id="contenidoCabecera">
+            <div id="barraHorizontal">
+            <li><a href="#">Usuarios</a></li>
+            <li><a href="RegistrarProyecto.aspx">Proyectos</a></li>
+            <li><a href="RegistrarActividad.aspx">Actividades</a></li>
+            <li><a href="RegistrarTarea.aspx">Tareas</a></li>
+            
+            </div>
+            <div id="logotipo">
+           
+
+            </div>
+            <div="titulo">
+                <h1>AgileTask</h1>
+                                 
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <div id="bajo">
+        <div id="columnIzq">
+
+        <asp:ContentPlaceHolder ID="contenidoMenuContextual" runat="server">       
+            
+   
+
+        </asp:ContentPlaceHolder>
+        
+        </div>
+        <div id="columnCentro">
+
+        <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">       
+        </asp:ContentPlaceHolder>
+        
+        </div>
+        <div id="columDer">
+        
+        </div>
+        <div id="pie">
+            <span>Desarrollado por: Grupo 5</span>
+            <span> <br />Contacto: <a href="#">grupo5@gmail.com</a></span>
+          
+        </div>
+    
+    </div>
+        
+    </div>
+    </form>
+</body>
+</html>
