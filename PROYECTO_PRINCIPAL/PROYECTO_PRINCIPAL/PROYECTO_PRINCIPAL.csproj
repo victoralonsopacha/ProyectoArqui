@@ -58,10 +58,12 @@
     <Content Include="Presentacion\EliminarActividad.aspx" />
     <Content Include="Presentacion\EliminarTarea.aspx" />
     <Content Include="Presentacion\GestionDeUsuarios.aspx" />
+    <Content Include="Presentacion\ListaDeProyectos.aspx" />
     <Content Include="Presentacion\Login.aspx" />
     <Content Include="Presentacion\ModificarProyecto.aspx" />
     <Content Include="Presentacion\NuevoUsuario.aspx" />
     <Content Include="Presentacion\Pincipal.aspx" />
+    <Content Include="Presentacion\ProyectoSeleccionado.aspx" />
     <Content Include="Presentacion\RegistrarActividad.aspx" />
     <Content Include="Presentacion\RegistrarProyecto.aspx" />
     <Content Include="Presentacion\RegistrarTarea.aspx" />
@@ -139,6 +141,13 @@
     <Compile Include="Presentacion\GestionDeUsuarios.aspx.designer.cs">
       <DependentUpon>GestionDeUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\ListaDeProyectos.aspx.cs">
+      <DependentUpon>ListaDeProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ListaDeProyectos.aspx.designer.cs">
+      <DependentUpon>ListaDeProyectos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,6 +182,13 @@
     </Compile>
     <Compile Include="Presentacion\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ProyectoSeleccionado.aspx.cs">
+      <DependentUpon>ProyectoSeleccionado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ProyectoSeleccionado.aspx.designer.cs">
+      <DependentUpon>ProyectoSeleccionado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\RegistrarActividad.aspx.cs">
       <DependentUpon>RegistrarActividad.aspx</DependentUpon>
