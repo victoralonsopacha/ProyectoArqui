@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" runat="server">
  <ul id="menuContextual">
+        <li><a href="ListaDeProyectos.aspx">Proyectos</a></li>
         <li><a href="RegistrarProyecto.aspx">Registrar Proyecto</a></li>
         <li><a href="ModificarProyecto.aspx">Modificar Proyecto</a></li>
         <li><a href="CancelarProyecto.aspx">Cancelar Proyecto</a></li>

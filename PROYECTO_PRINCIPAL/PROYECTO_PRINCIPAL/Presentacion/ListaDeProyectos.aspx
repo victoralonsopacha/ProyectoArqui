@@ -5,9 +5,7 @@
 <center> <h1>LISTA DE PROYECTOS</h1> </center>
 <center> 
     <br />
-    <asp:Button ID="btnNuevoProyecto" runat="server" Text="Nuevo Proyecto" 
-        class="btn btn-primary" onclick="btnNuevoProyecto_Click" 
-        BackColor="#6666FF" ForeColor="White" Height="37px" Width="159px"/> </center>
+    </center>
 <center> <asp:Table ID="Table1" runat="server">
         </asp:Table> </center>
 </asp:Content>
