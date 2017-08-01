@@ -48,7 +48,7 @@
     <div class="form-group row">   
         <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">       
-          <asp:TextBox ID="TextBox2" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="TextBox2" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">

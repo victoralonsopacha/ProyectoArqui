@@ -13,5 +13,10 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         {
 
         }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Pincipal.aspx");
+        }
     }
 }
