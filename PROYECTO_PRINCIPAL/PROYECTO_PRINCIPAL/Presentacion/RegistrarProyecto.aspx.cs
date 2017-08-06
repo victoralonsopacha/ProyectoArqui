@@ -18,6 +18,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             if (!IsPostBack)
             {
                 ddlproyectos.AutoPostBack = true;
+                llenarlista();
             }
         }
 
