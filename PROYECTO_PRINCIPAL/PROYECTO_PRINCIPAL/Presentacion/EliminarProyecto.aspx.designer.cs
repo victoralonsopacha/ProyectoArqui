@@ -10,16 +10,7 @@
 namespace PROYECTO_PRINCIPAL.Presentacion {
     
     
-    public partial class ModificarProyecto {
-        
-        /// <summary>
-        /// Label4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+    public partial class EliminarProyecto {
         
         /// <summary>
         /// ddlproyectos control.
@@ -85,12 +76,12 @@ namespace PROYECTO_PRINCIPAL.Presentacion {
         protected global::System.Web.UI.WebControls.TextBox txtprogresoproy;
         
         /// <summary>
-        /// bnmodificar control.
+        /// btneliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bnmodificar;
+        protected global::System.Web.UI.WebControls.Button btneliminar;
     }
 }

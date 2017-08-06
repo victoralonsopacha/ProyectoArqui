@@ -53,9 +53,9 @@
     <Content Include="App_Themes\Tema1\fondo.png" />
     <Content Include="App_Themes\Tema1\tema1.css" />
     <Content Include="Presentacion\AsignarTarea.aspx" />
-    <Content Include="Presentacion\CancelarProyecto.aspx" />
     <Content Include="Presentacion\EditarUsuario.aspx" />
     <Content Include="Presentacion\EliminarActividad.aspx" />
+    <Content Include="Presentacion\EliminarProyecto.aspx" />
     <Content Include="Presentacion\EliminarTarea.aspx" />
     <Content Include="Presentacion\GestionDeUsuarios.aspx" />
     <Content Include="Presentacion\ListaDeProyectos.aspx" />
@@ -78,19 +78,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comun\Cm_ClsProyecto.cs" />
+    <Compile Include="Datos\Dt_ClsProyecto.cs" />
+    <Compile Include="Negocio\Ng_ClsProyecto.cs" />
     <Compile Include="Presentacion\AsignarTarea.aspx.cs">
       <DependentUpon>AsignarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Presentacion\AsignarTarea.aspx.designer.cs">
       <DependentUpon>AsignarTarea.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\CancelarProyecto.aspx.cs">
-      <DependentUpon>CancelarProyecto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Presentacion\CancelarProyecto.aspx.designer.cs">
-      <DependentUpon>CancelarProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\EditarUsuario.aspx.cs">
       <DependentUpon>EditarUsuario.aspx</DependentUpon>
@@ -105,6 +101,13 @@
     </Compile>
     <Compile Include="Presentacion\EliminarActividad.aspx.designer.cs">
       <DependentUpon>EliminarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\EliminarProyecto.aspx.cs">
+      <DependentUpon>EliminarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EliminarProyecto.aspx.designer.cs">
+      <DependentUpon>EliminarProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\EliminarTarea.aspx.cs">
       <DependentUpon>EliminarTarea.aspx</DependentUpon>
@@ -213,11 +216,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Comun\" />
-    <Folder Include="Datos\" />
-    <Folder Include="Negocio\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Presentacion\Principal.Master" />
   </ItemGroup>

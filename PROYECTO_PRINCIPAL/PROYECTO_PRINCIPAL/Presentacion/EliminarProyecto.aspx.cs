@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PROYECTO_PRINCIPAL.Presentacion
 {
-    public partial class CancelarProyecto : System.Web.UI.Page
+    public partial class EliminarProyecto : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

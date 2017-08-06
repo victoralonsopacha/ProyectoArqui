@@ -6,7 +6,7 @@
         <li><a href="ListaDeProyectos.aspx">Proyectos</a></li>
         <li><a href="RegistrarProyecto.aspx">Registrar Proyecto</a></li>
         <li><a href="ModificarProyecto.aspx">Modificar Proyecto</a></li>
-        <li><a href="CancelarProyecto.aspx">Cancelar Proyecto</a></li>
+        <li><a href="EliminarProyecto.aspx">Eliminar Proyecto</a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="server">
