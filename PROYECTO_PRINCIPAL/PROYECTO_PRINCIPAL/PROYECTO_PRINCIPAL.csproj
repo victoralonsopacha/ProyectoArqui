@@ -79,8 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comun\Cm_ClsProyecto.cs" />
+    <Compile Include="Comun\Cm_ClsUsuario.cs" />
     <Compile Include="Datos\Dt_ClsProyecto.cs" />
+    <Compile Include="Datos\Dt_ClsUsuario.cs" />
     <Compile Include="Negocio\Ng_ClsProyecto.cs" />
+    <Compile Include="Negocio\Ng_ClsUsuario.cs" />
     <Compile Include="Presentacion\AsignarTarea.aspx.cs">
       <DependentUpon>AsignarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

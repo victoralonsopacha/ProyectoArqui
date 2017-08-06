@@ -18,19 +18,20 @@
     <div class="form-group row">   
         <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
         <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">       
-          <asp:TextBox ID="TextBox2" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
+          <asp:TextBox ID="txtPassword" runat="server" class="form-control" 
+              TextMode="Password" ></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">
       <div class="offset-sm-2 col-sm-10">     
-          <asp:Button ID="Button1" runat="server" Text="Sign in" class="btn btn-primary" 
-              onclick="Button1_Click"/>
+          <asp:Button ID="btnIngresar" runat="server" Text="Sign in" class="btn btn-primary" 
+              onclick="btnIngresar_Click"/>
       </div>
     </div>
   </form>

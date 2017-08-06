@@ -10,3 +10,7 @@ C:\Users\Karla\Documents\GitHub\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCI
 C:\Users\Karla\Documents\GitHub\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.pdb
 C:\Users\Karla\Documents\GitHub\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.dll
 C:\Users\Karla\Documents\GitHub\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.pdb
+C:\Users\Kathy\Documents\GitHub\Proyecto Arqui3\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.dll
+C:\Users\Kathy\Documents\GitHub\Proyecto Arqui3\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.pdb
+C:\Users\Kathy\Documents\GitHub\Proyecto Arqui3\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.dll
+C:\Users\Kathy\Documents\GitHub\Proyecto Arqui3\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.pdb
