@@ -1,0 +1,10 @@
+Procedimientos para la base 
+
+1.-Procedimiento para el login
+
+CREATE procedure [dbo].[LOGINUSUARIO]
+	@NOMBRE varchar(30),
+    @PASSWORD int
+    AS
+		SELECT NOMBRE, PASSWORD  FROM USUARIO
+		WHERE NOMBRE = @NOMBRE AND PASSWORD  =@PASSWORD
