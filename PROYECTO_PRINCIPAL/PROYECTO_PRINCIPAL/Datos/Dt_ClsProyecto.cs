@@ -15,12 +15,12 @@ namespace PROYECTO_PRINCIPAL.Datos
 
         public static string cadena
         {
-            get { return ConfigurationManager.ConnectionStrings["conProy"].ConnectionString; }
+            get { return ConfigurationManager.ConnectionStrings["conProyecto"].ConnectionString; }
         }
 
         public static string provider
         {
-            get { return ConfigurationManager.ConnectionStrings["conProy"].ProviderName; }
+            get { return ConfigurationManager.ConnectionStrings["conProyecto"].ProviderName; }
         }
 
         public static DbProviderFactory factory
@@ -116,6 +116,11 @@ namespace PROYECTO_PRINCIPAL.Datos
      public int actualizarProyecto(int id, string nombre, string descr, string progreso)
         {
             List<DbParameter> parametros = new List<DbParameter>();
+
+            DbParameter param0 = factory.CreateParameter();
+            param0.Value = id;
+            param0.ParameterName = "ID";
+            parametros.Add(param0);
 
             DbParameter param = factory.CreateParameter();
             param.Value = nombre;

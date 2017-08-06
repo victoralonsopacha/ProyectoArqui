@@ -16,6 +16,5 @@ namespace PROYECTO_PRINCIPAL.Negocio
             return DtUsuario.login(nombre, password);
         }
 
-
     }
 }

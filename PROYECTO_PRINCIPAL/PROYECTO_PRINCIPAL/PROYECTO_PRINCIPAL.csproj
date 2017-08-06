@@ -57,10 +57,13 @@
     <Content Include="Presentacion\EliminarActividad.aspx" />
     <Content Include="Presentacion\EliminarProyecto.aspx" />
     <Content Include="Presentacion\EliminarTarea.aspx" />
+    <Content Include="Presentacion\CSS\Estilos.css" />
     <Content Include="Presentacion\GestionDeUsuarios.aspx" />
+    <Content Include="Presentacion\Imágenes\fondo2.jpg" />
+    <Content Include="Presentacion\Imágenes\fondoprincipal.jpg" />
+    <Content Include="Presentacion\Imágenes\logo.png" />
     <Content Include="Presentacion\ListaDeProyectos.aspx" />
     <Content Include="Presentacion\Login.aspx" />
-    <Content Include="Presentacion\ModificarProyecto.aspx" />
     <Content Include="Presentacion\NuevoUsuario.aspx" />
     <Content Include="Presentacion\Pincipal.aspx" />
     <Content Include="Presentacion\ProyectoSeleccionado.aspx" />
@@ -161,13 +164,6 @@
     <Compile Include="Presentacion\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\ModificarProyecto.aspx.cs">
-      <DependentUpon>ModificarProyecto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Presentacion\ModificarProyecto.aspx.designer.cs">
-      <DependentUpon>ModificarProyecto.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\NuevoUsuario.aspx.cs">
       <DependentUpon>NuevoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,7 +236,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1115</DevelopmentServerPort>
+          <DevelopmentServerPort>55682</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

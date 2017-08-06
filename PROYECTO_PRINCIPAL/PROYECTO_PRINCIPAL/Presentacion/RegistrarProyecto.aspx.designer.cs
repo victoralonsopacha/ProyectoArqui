@@ -13,6 +13,15 @@ namespace PROYECTO_PRINCIPAL.Presentacion {
     public partial class RegistrarProyecto {
         
         /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
         /// ddlproyectos control.
         /// </summary>
         /// <remarks>
@@ -83,5 +92,23 @@ namespace PROYECTO_PRINCIPAL.Presentacion {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnregistrar;
+        
+        /// <summary>
+        /// btnactualizar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnactualizar;
+        
+        /// <summary>
+        /// btneliminar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btneliminar;
     }
 }

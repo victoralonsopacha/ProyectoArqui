@@ -5,7 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
    <div><title>REGISTRAR PROYECTO </title></div>
-<h1>Registar Proyecto</h1>
+<h1>&nbsp;Proyecto</h1>
     <table style="width: 100%">
         <tr>
             <td style="width: 236px">
@@ -19,9 +19,11 @@
         </tr>
         <tr>
             <td style="width: 236px">
-                &nbsp;</td>
+                <asp:Label ID="Label4" runat="server" Text="Seleccionar proyecto:"></asp:Label>
+            </td>
             <td style="width: 191px">
-                <asp:DropDownList ID="ddlproyectos" runat="server" Visible="False">
+                <asp:DropDownList ID="ddlproyectos" runat="server" 
+                    ontextchanged="ddlproyectos_TextChanged">
                 </asp:DropDownList>
             </td>
             <td>
@@ -46,7 +48,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Descripción:"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:TextBox ID="txtdescripproy" runat="server" Height="27px" Width="413px"></asp:TextBox>
+                <asp:TextBox ID="txtdescripproy" runat="server" Height="27px" Width="295px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -58,7 +60,7 @@
                 <asp:Label ID="Label3" runat="server" Text="Progreso:"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:TextBox ID="txtprogresoproy" runat="server" ReadOnly="True">SIN EMPEZAR</asp:TextBox>
+                <asp:TextBox ID="txtprogresoproy" runat="server" >SIN EMPEZAR</asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -77,10 +79,17 @@
         </tr>
         <tr>
             <td style="width: 236px">
-                &nbsp;</td>
-            <td colspan="2">
-                <asp:Button ID="btnregistrar" runat="server" Text="REGISTRAR" Height="41px" 
-                    Width="155px" class="btn btn-info" onclick="btnregistrar_Click" />
+                <asp:Button ID="btnregistrar" runat="server" Text="REGISTRAR" Height="52px" 
+                    Width="170px" class="btn btn-info" onclick="btnregistrar_Click" />
+            </td>
+            <td>
+                <asp:Button ID="btnactualizar" runat="server" onclick="btnactualizar_Click" 
+                    Text="ACTUALIZAR" class="btn btn-info" Height="47px" Width="179px" />
+            </td>
+            <td>
+                <asp:Button ID="btneliminar" runat="server" Text="ELIMINAR" 
+                    class="btn btn-info" onclick="btneliminar_Click" Height="57px" 
+                    Width="149px" />
             </td>
             <td>
                 &nbsp;</td>

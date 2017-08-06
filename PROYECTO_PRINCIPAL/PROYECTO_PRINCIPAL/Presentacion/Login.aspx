@@ -9,32 +9,68 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="Stylesheet" href=CSS/Estilos.css />
+    <style type="text/css">
+        .style1
+        {
+            width: 401px;
+            height: 106px;
+            text-align: center;
+        }
+        .style2
+        {
+            width: 762px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     <div class="container">
-  <form>
-    <div class="form-group row">   
-        <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
-      <div class="col-sm-4">    
-          <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
       </div>
-    </div>
-    <div class="form-group row">   
-        <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
-      <div class="col-sm-4">       
-          <asp:TextBox ID="txtPassword" runat="server" class="form-control" 
-              TextMode="Password" ></asp:TextBox>
+      <br />
+      <br /> 
+      <div class= "menu"> 
+      
+      
+          <table class="w-100">
+              <tr>
+                  <td class="style2">
+                      <img alt="Logo" class="style1" 
+                          src="http://localhost:55682/Presentacion/Imágenes/logo.png" /></td>
+                  <td>
+                      <asp:Button ID="btnRegistrarse" runat="server" Text="REGISTRARSE" 
+                          class="btn btn-primary" onclick="btnRegistrarse_Click" />
+                  </td>
+              </tr>
+              <tr>
+                  <td class="style2">
+                      &nbsp;</td>
+                  <td>
+                      &nbsp;</td>
+              </tr>
+          </table>
+      
+      
       </div>
-    </div>
-    <div class="form-group row">
-      <div class="offset-sm-2 col-sm-10">     
+
+
+  <div class="login"> 
+        <h1> Iniciar Sesión</h1>
+        <br />
+        <p> con tu cuenta de MeisterTask </p>    
+          <asp:TextBox ID="txtNombre" placeholder="Ingrese su usuario" runat="server" class="form-control"></asp:TextBox>
+
+    <br />  
+               
+          <asp:TextBox ID="txtPassword" runat="server"  placeholder="Ingrese su contraseña" class="form-control"  TextMode="Password" ></asp:TextBox>
+    <br />
+    
           <asp:Button ID="btnIngresar" runat="server" Text="Sign in" class="btn btn-primary" 
               onclick="btnIngresar_Click"/>
-      </div>
     </div>
-  </form>
+    </form>
 </div>
     </div>
     </form>

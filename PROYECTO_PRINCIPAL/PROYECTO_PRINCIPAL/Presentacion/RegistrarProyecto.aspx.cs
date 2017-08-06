@@ -17,7 +17,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         {
             if (!IsPostBack)
             {
-
+                ddlproyectos.AutoPostBack = true;
             }
         }
 
@@ -44,8 +44,75 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                                </script>";
             ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
             llenarlista();
+            limpiar();
             }
         }
 
+
+        private void limpiar()
+        {
+            txtnombreproy.Text = null;
+            txtdescripproy.Text = null;
+            txtprogresoproy.Text = null;
+        }
+
+        protected void ddlproyectos_TextChanged(object sender, EventArgs e)
+        {
+            Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
+            int id = Convert.ToInt16(ddlproyectos.SelectedValue);
+            Cm_ClsProyecto obj_proy = ng_proyecto.obtenerProyectoId(id);
+            mostrarProyecto(obj_proy);
+        }
+
+        private void mostrarProyecto(Cm_ClsProyecto proyecto)
+        {
+            txtnombreproy.Text = proyecto.Nombre_proy;
+            txtdescripproy.Text = proyecto.Descripcion_proy;
+            txtprogresoproy.Text = proyecto.Progreso_proy;
+
+        }
+
+
+        protected void btnactualizar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt16(ddlproyectos.SelectedValue);
+            string nombre = txtnombreproy.Text;
+            string descr = txtprogresoproy.Text;
+            string progreso = txtprogresoproy.Text;
+
+
+            Ng_ClsProyecto ng_producto = new Ng_ClsProyecto();
+            if (ng_producto.actualizarProyecto(id,nombre, descr, progreso) > 0)
+            {
+
+                string mensaje = @"<script type='text/javascript'>
+                                   alert('¡Proyecto Actualizado!');
+                                    </script>";
+
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
+                llenarlista();
+                limpiar();
+            }
+        }
+
+        protected void btneliminar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt16(ddlproyectos.SelectedValue);
+
+
+            Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
+            if (ng_proyecto.eliminarProyecto(id) > 0)
+            {
+
+                string mensaje = @"<script type='text/javascript'>
+                                   alert('¡Proyecto Eliminado!');
+                                    </script>";
+
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
+                llenarlista();
+                limpiar();
+        }
+
+        }
     }
 }

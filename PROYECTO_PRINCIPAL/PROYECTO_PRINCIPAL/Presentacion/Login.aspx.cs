@@ -34,7 +34,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                                    alert('INGRESO CORRECTO!!');
                                     </script>";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOpRINCIPAL", mensaje, false);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
 
             }
             else
@@ -43,9 +43,14 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                                    alert('INGRESO FALLIDO!!');
                                     </script>";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOpRINCIPAL", mensaje, false);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
             }
 
+        }
+
+        protected void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NuevoUsuario.aspx");
         }
 
     }

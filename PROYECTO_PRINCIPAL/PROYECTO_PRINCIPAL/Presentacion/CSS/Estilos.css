@@ -1,0 +1,15 @@
+﻿body 
+{
+    background-image: Imágenes\fondoprincipal.jpg;
+}
+
+
+.login {
+	
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	top: 7px;
+	padding-bottom: 45px;
+	text-align: center;
+}
