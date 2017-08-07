@@ -40,7 +40,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             else
             {
                 string mensaje = @"<script type='text/javascript'>
-                                   alert('INGRESO FALLIDO!!');
+                                   alert('INGRESO INCORRECTO!!');
                                     </script>";
 
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);

@@ -12,13 +12,26 @@ namespace PROYECTO_PRINCIPAL.Negocio
         public Cm_ClsUsuario login(string nombre, string contraseña)
         {
 
-            Dt_ClsUsuario DtUsuario = new Dt_ClsUsuario();
-            return DtUsuario.login(nombre, contraseña);
+            Dt_ClsUsuario dt_Usuario = new Dt_ClsUsuario();
+            return dt_Usuario.login(nombre, contraseña);
         }
         public int registrarUsuario(int cedula, string nombre, string contraseña, string correo)
         {
             Dt_ClsUsuario dt_usuario = new Dt_ClsUsuario();
             return dt_usuario.registrarUsuario(nombre, cedula, contraseña, correo);
+        }
+
+        public int actualizarUsuario(int cedula, string nombre, string contraseña, string correo)
+        {
+            Dt_ClsUsuario dt_usuario = new Dt_ClsUsuario();
+            return dt_usuario.actualizarUsuario(nombre, cedula, contraseña, correo);
+        }
+
+        public Cm_ClsUsuario buscarUsuario(int cedula)
+        {
+
+            Dt_ClsUsuario dt_Usuario = new Dt_ClsUsuario();
+            return dt_Usuario.buscarUsuario(cedula);
         }
 
     }
