@@ -19,30 +19,34 @@
     <div class="form-group row">   
         <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label3" runat="server" Text="UserName:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Cedula:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label4" runat="server" Text="Email:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Password:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox4" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtPassword" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Email:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">       
-          <asp:TextBox ID="TextBox2" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
+          <asp:TextBox ID="txtCorreo" runat="server" class="form-control" 
+              TextMode="Password" ></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">
       <div class="offset-sm-2 col-sm-10">     
-          <asp:Button ID="btnAgregar" runat="server" Text="Agregar" 
+          <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" 
               class="btn btn-primary" onclick="btnAgregar_Click"/>
       </div>
     </div>

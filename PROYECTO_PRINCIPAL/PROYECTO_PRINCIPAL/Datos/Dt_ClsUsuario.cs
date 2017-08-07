@@ -63,7 +63,7 @@ namespace PROYECTO_PRINCIPAL.Datos
             return id;
         }
 
-        public Cm_ClsUsuario login(string nombre, int password)
+        public Cm_ClsUsuario login(string nombre, string contraseña)
         {
             Cm_ClsUsuario usuario = new Cm_ClsUsuario();
             string PROYECTO_PRINCIPAL = "LOGINUSUARIO";
@@ -79,14 +79,14 @@ namespace PROYECTO_PRINCIPAL.Datos
 
                     DbParameter param1 = comando.CreateParameter();
                     param1.DbType = DbType.String;
-                    param1.ParameterName = "nombre";
+                    param1.ParameterName = "NOMBRE";
                     param1.Value = nombre;
                     comando.Parameters.Add(param1);
 
                     DbParameter param2 = comando.CreateParameter();
-                    param2.DbType = DbType.Int32;
-                    param2.ParameterName = "password";
-                    param2.Value = password;
+                    param2.DbType = DbType.String;
+                    param2.ParameterName = "CONTRASEÑA";
+                    param2.Value = contraseña;
                     comando.Parameters.Add(param2);
 
                     conexion.Open();
@@ -96,8 +96,8 @@ namespace PROYECTO_PRINCIPAL.Datos
                         while (lector.Read())
                         {
                             usuario = new Cm_ClsUsuario(
-                                (string)lector["nombre"],
-                                (int)lector["password"]);
+                                (string)lector["NOMBRE"],
+                                (string)lector["CONTRASEÑA"]);
 
                         }
                     }
@@ -106,6 +106,31 @@ namespace PROYECTO_PRINCIPAL.Datos
 
             }
             return usuario;
+        }
+        public int registrarUsuario(string nombre, int cedula, string contraseña, string correo)
+        {
+            List<DbParameter> parametros = new List<DbParameter>();
+            DbParameter param = factory.CreateParameter();
+            param.Value = nombre;
+            param.ParameterName = "NOMBRE";
+            parametros.Add(param);
+
+            DbParameter param1 = factory.CreateParameter();
+            param1.Value = cedula;
+            param1.ParameterName = "CEDULA";
+            parametros.Add(param1);
+
+            DbParameter param2 = factory.CreateParameter();
+            param2.Value = contraseña;
+            param2.ParameterName = "CONTRASEÑA";
+            parametros.Add(param2);
+
+            DbParameter param3 = factory.CreateParameter();
+            param3.Value = correo;
+            param3.ParameterName = "CORREO";
+            parametros.Add(param3);
+
+            return ejecutarProcedimientos("registrarUsuario", parametros);
         }
 
 
