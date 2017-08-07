@@ -13,5 +13,20 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         {
 
         }
+
+        protected void btnregistrar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtnombreact.Text;
+            string descr = txtdescripact.Text;
+            
+            Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
+            if (ng_proyecto.insertarProyecto(nombre, descr, progreso)>0)
+            {
+            string mensaje = @"<script type='text/javascript'> alert('¡Proyecto Registrado!');
+                               </script>";
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
+            llenarlista();
+            limpiar();
+        }
     }
 }
