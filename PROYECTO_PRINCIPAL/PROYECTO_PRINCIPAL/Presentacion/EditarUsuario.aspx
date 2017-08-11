@@ -20,40 +20,44 @@
     <div class="form-group row">   
         <asp:Label ID="Label5" runat="server" Text="Buscar Usuario:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox5" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtBuscar" runat="server" class="form-control"></asp:TextBox>
       </div>
       <div class="col-sm-4">            
-          <asp:Button ID="btnBuscarUsuario" runat="server" Text="Buscar" class="btn btn-primary" />
+          <asp:Button ID="btnBuscar" runat="server" Text="Buscar" class="btn btn-primary" 
+              onclick="btnBuscar_Click" />
       </div>
     </div>
 
     <div class="form-group row">   
         <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label3" runat="server" Text="UserName:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Cedula:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label4" runat="server" Text="Email:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Password:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox4" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtContraseña" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Email:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">       
-          <asp:TextBox ID="TextBox2" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
+          <asp:TextBox ID="txtCorreo" runat="server" class="form-control" ></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">
       <div class="offset-sm-2 col-sm-10">     
-          <asp:Button ID="btnEditar" runat="server" Text="Editar" class="btn btn-primary" 
+          <asp:Button ID="btnActualizar" runat="server" Text="ActualizarRegistro" class="btn btn-primary" 
               onclick="btnEditar_Click" />
       </div>
     </div>

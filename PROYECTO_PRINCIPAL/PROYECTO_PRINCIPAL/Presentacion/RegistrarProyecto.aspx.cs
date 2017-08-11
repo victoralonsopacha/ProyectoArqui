@@ -15,9 +15,16 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+          
+
             if (!IsPostBack)
             {
                 ddlproyectos.AutoPostBack = true;
+                llenarlista();
             }
         }
 

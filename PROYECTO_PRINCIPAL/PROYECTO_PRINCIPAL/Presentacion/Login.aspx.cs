@@ -21,29 +21,29 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
 
-            Ng_ClsUsuario Ng_ClsUsuario = new Ng_ClsUsuario();
-            Cm_ClsUsuario Dt_ClsUsuario = new Cm_ClsUsuario();
-            Dt_ClsUsuario = Ng_ClsUsuario.login(txtNombre.Text, Convert.ToInt32(txtPassword.Text));
-            Session.Add("Usuario", Dt_ClsUsuario.Password);
-            Response.Redirect("Pincipal.aspx");
+            Ng_ClsUsuario ng_ClsUsuario = new Ng_ClsUsuario();
+            Cm_ClsUsuario dt_ClsUsuario = new Cm_ClsUsuario();
+            dt_ClsUsuario = ng_ClsUsuario.login(txtNombre.Text, txtPassword.Text);
 
 
-            if (txtPassword.Text.Equals(Dt_ClsUsuario.Password))
+
+            if (txtNombre.Text.Equals(dt_ClsUsuario.Nombre) && txtPassword.Text.Equals(dt_ClsUsuario.Contraseña))
             {
                 string mensaje = @"<script type='text/javascript'>
                                    alert('INGRESO CORRECTO!!');
                                     </script>";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
-
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
+                Session.Add("Usuario", dt_ClsUsuario.Contraseña);
+                Response.Redirect("Pincipal.aspx");
             }
             else
             {
                 string mensaje = @"<script type='text/javascript'>
-                                   alert('INGRESO FALLIDO!!');
+                                   alert('INGRESO INCORRECTO!!');
                                     </script>";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTO_PRINCIPAL", mensaje, false);
             }
 
         }
