@@ -6,7 +6,7 @@
 #cabecera
 {
     height:170px;
-    background-color:#76cffe;
+    background-color:cornsilk;
     color:Black;    
     border:1px;
     box-shadow:0px 0px 10px #000;
@@ -75,7 +75,7 @@
 {
     width:1600px;
     margin:auto;
-    background-color:#76cffe;
+    background-color:cornsilk;
     border-radius:0px 0px 20px 20px;   
     overflow:auto;
     box-shadow:0px 0px 10px #000;
@@ -124,7 +124,7 @@
 #pie
 {
     height:40px;
-    background-color:#76cffe;
+    background-color:cornsilk;
     border-radius:0px 0px 20px 20px;
     clear:both;
     box-shadow:0px 0px 5px #000 inset;

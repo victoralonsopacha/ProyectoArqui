@@ -10,7 +10,7 @@ namespace PROYECTO_PRINCIPAL.Comun
         #region atributos
         private int cedula;
         private string nombre;
-        private string contraseña;
+        private int password;
         private string correo;
         #endregion
 
@@ -20,41 +20,21 @@ namespace PROYECTO_PRINCIPAL.Comun
             get { return nombre; }
             set { nombre = value; }
         }
-        public string Contraseña
+        public int Password
         {
-            get { return contraseña; }
-            set { contraseña = value; }
+            get { return password; }
+            set { password = value; }
         }
-        public int Cedula
-        {
-            get { return cedula; }
-            set { cedula = value; }
-        }
-        public string Correo
-        {
-            get { return correo; }
-            set { correo = value; }
-        }
-
 
         #endregion
 
         #region constructores
-        public Cm_ClsUsuario(string nombre, string contraseña)
+        public Cm_ClsUsuario(string nombre, int password)
         {
 
             this.nombre = nombre;
-            this.contraseña = contraseña;
+            this.password = password;
 
-        }
-
-        public Cm_ClsUsuario(string nombre, int cedula, string contraseña, string correo)
-        {
-
-            this.nombre = nombre;
-            this.cedula = cedula;
-            this.contraseña = contraseña;
-            this.correo = correo;
         }
 
         public Cm_ClsUsuario() { }

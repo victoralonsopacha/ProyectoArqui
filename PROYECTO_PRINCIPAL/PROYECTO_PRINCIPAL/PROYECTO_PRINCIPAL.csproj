@@ -81,12 +81,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comun\Cm_ClsActividad.cs" />
     <Compile Include="Comun\Cm_ClsProyecto.cs" />
     <Compile Include="Comun\Cm_ClsTarea.cs" />
     <Compile Include="Comun\Cm_ClsUsuario.cs" />
+    <Compile Include="Datos\Dt_ClsActividad.cs" />
     <Compile Include="Datos\Dt_ClsProyecto.cs" />
     <Compile Include="Datos\Dt_ClsTarea.cs" />
     <Compile Include="Datos\Dt_ClsUsuario.cs" />
+    <Compile Include="Negocio\Ng_ClsActividad.cs" />
     <Compile Include="Negocio\Ng_ClsProyecto.cs" />
     <Compile Include="Negocio\Ng_ClsTarea.cs" />
     <Compile Include="Negocio\Ng_ClsUsuario.cs" />

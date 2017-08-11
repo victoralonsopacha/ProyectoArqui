@@ -18,4 +18,3 @@ C:\Users\Karla\Documents\GitHub\ProyectoArqui2\PROYECTO_PRINCIPAL\PROYECTO_PRINC
 C:\Users\Karla\Documents\GitHub\ProyectoArqui2\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.pdb
 C:\Users\Karla\Documents\GitHub\ProyectoArqui2\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.dll
 C:\Users\Karla\Documents\GitHub\ProyectoArqui2\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.pdb
-C:\Users\pepe\Documents\ProyectoArqui\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.csprojResolveAssemblyReference.cache

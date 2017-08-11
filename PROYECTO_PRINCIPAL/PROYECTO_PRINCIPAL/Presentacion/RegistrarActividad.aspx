@@ -9,9 +9,14 @@
 <table style="width: 100%">
         <tr>
             <td style="width: 236px">
-                &nbsp;</td>
+                <asp:Label ID="Label6" runat="server" Text="Seleccionar actividad:"></asp:Label>
+            </td>
             <td style="width: 191px">
-                &nbsp;</td>
+                <asp:DropDownList ID="ddlactividades" runat="server" 
+                    ontextchanged="ddlactividades_TextChanged" 
+                    onselectedindexchanged="ddlactividades_SelectedIndexChanged">
+                </asp:DropDownList>
+            </td>
             <td>
                 &nbsp;</td>
             <td>
@@ -32,10 +37,46 @@
         </tr>
         <tr>
             <td style="width: 236px">
+                <asp:Label ID="Label3" runat="server" Text="Estado:"></asp:Label>
+            </td>
+            <td style="width: 191px">
+                <asp:TextBox ID="txtestadoact" runat="server" Width="296px"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 236px">
                 <asp:Label ID="Label2" runat="server" Text="Descripción:"></asp:Label>
             </td>
             <td style="width: 191px">
                 <asp:TextBox ID="txtdescripact" runat="server" Height="27px" Width="295px"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 236px">
+                <asp:Label ID="Label4" runat="server" Text="Fecha de inicio:"></asp:Label>
+            </td>
+            <td style="width: 191px">
+                <asp:TextBox ID="txtfechainicio" runat="server" Width="296px"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 236px">
+                <asp:Label ID="Label5" runat="server" Text="Fecha de fin:"></asp:Label>
+            </td>
+            <td style="width: 191px">
+                <asp:TextBox ID="txtfechafin" runat="server" Width="296px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -59,7 +100,10 @@
             </td>
           
             <td>
-                &nbsp;</td>
+                <asp:Button ID="btneliminar" runat="server" Text="ELIMINAR" 
+                    class="btn btn-info" onclick="btneliminar_Click" Height="57px" 
+                    Width="149px" />
+            </td>
         </tr>
         <tr>
             <td style="width: 236px">
