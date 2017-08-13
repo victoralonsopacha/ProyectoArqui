@@ -25,7 +25,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             Cm_ClsUsuario Dt_ClsUsuario = new Cm_ClsUsuario();
             Dt_ClsUsuario = Ng_ClsUsuario.login(txtNombre.Text,txtPassword.Text);
 
-            if (txtPassword.Text.Equals(Dt_ClsUsuario.Contraseña))
+            if (txtPassword.Text.Equals(Dt_ClsUsuario.Contraseña) && txtNombre.Text.Equals(Dt_ClsUsuario.Nombre))
             {
                 string mensaje = @"<script type='text/javascript'>
                                    alert('INGRESO CORRECTO!!');
@@ -43,8 +43,8 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
             }
 
-            Session.Add("Usuario", Dt_ClsUsuario.Contraseña);
-            Session.Add("nombre_usuario", txtNombre.Text);
+
+            Session.Add("Usuario", Dt_ClsUsuario.Cedula);
             Response.Redirect("Pincipal.aspx");
 
         }

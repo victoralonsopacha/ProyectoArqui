@@ -97,7 +97,8 @@ namespace PROYECTO_PRINCIPAL.Datos
                         {
                             usuario = new Cm_ClsUsuario(
                                 (string)lector["nombre"],
-                                (string)lector["contraseña"]);
+                                (string)lector["contraseña"],
+                                (int)lector["cedula"]);
 
                         }
                     }

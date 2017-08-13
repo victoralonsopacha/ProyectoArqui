@@ -46,10 +46,11 @@ namespace PROYECTO_PRINCIPAL.Comun
         #endregion
 
         #region constructores
-        public Cm_ClsUsuario(string nombre,string contraseña)
+        public Cm_ClsUsuario(string nombre,string contraseña, int cedula)
         {
             this.nombre = nombre;
             this.contraseña = contraseña;
+            this.cedula = cedula;
         }
 
         public Cm_ClsUsuario(int cedula, string nombre, string contraseña, string correo)

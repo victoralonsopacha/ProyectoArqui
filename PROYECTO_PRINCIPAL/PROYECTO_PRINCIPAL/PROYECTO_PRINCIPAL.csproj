@@ -58,7 +58,6 @@
     <Content Include="Presentacion\VerProyecto.aspx" />
     <Content Include="Presentacion\EliminarTarea.aspx" />
     <Content Include="Presentacion\CSS\Estilos.css" />
-    <Content Include="Presentacion\GestionDeUsuarios.aspx" />
     <Content Include="Presentacion\Imágenes\fondo2.jpg" />
     <Content Include="Presentacion\Imágenes\fondoprincipal.jpg" />
     <Content Include="Presentacion\Imágenes\logo.png" />
@@ -148,13 +147,6 @@
     </Compile>
     <Compile Include="Presentacion\GestionDeTareas.master.designer.cs">
       <DependentUpon>GestionDeTareas.master</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\GestionDeUsuarios.aspx.cs">
-      <DependentUpon>GestionDeUsuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Presentacion\GestionDeUsuarios.aspx.designer.cs">
-      <DependentUpon>GestionDeUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\ListaDeProyectos.aspx.cs">
       <DependentUpon>ListaDeProyectos.aspx</DependentUpon>

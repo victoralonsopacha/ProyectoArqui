@@ -56,7 +56,7 @@ go
 create table USUARIO (
    CEDULA               int                  not null,
    NOMBRE               varchar(30)          not null,
-   CONTRASEÑA           varchar(30)                  not null,
+   CONTRASEÑA           varchar(30)          not null,
    CORREO               varchar(30)          not null,
    constraint PK_USUARIO primary key (CEDULA)
 )
@@ -101,8 +101,9 @@ create procedure LOGINUSUARIO
 @NOMBRE varchar(30),
 @CONTRASEÑA varchar(30)
 AS
-SELECT NOMBRE, CONTRASEÑA  FROM USUARIO
+SELECT NOMBRE, CONTRASEÑA, CEDULA  FROM USUARIO
 WHERE NOMBRE = @NOMBRE AND CONTRASEÑA  =@CONTRASEÑA
+
 
 --PROCEDIMIENTO ACTUALIZAR USUARIO
 create procedure actualizarUsuario
@@ -123,7 +124,6 @@ AS
 select * from USUARIO
 WHERE cedula= @cedula
 exec buscarUsuario 1723427207
-
 
 
 
