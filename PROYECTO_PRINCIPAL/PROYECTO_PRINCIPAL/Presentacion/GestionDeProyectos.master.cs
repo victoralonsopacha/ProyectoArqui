@@ -4,14 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PROYECTO_PRINCIPAL.Comun;
 
 namespace PROYECTO_PRINCIPAL.Presentacion
 {
     public partial class GestionDeProyectos : System.Web.UI.MasterPage
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
+
+
+        
     }
 }

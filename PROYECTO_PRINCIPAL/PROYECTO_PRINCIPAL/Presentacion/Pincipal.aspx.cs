@@ -11,8 +11,16 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["nombre_usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                txtNombre.Text = "Bienvenido: " + Convert.ToString(Session["nombre_usuario"]);
+            }
         }
+
 
     }
 }

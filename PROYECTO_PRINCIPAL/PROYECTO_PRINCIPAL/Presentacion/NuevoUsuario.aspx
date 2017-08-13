@@ -15,29 +15,34 @@
     <form id="form1" runat="server">
     <div>
         <div class="container">
-  <form>
+    </div>
     <div class="form-group row">   
         <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
         <asp:Label ID="Label3" runat="server" Text="UserName:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtUserName" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label4" runat="server" Text="Email:" class="col-sm-2 col-form-label"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Cedula:" 
+            class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="TextBox4" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>
+          <asp:Label ID="Label5" runat="server" Text="Correo: "></asp:Label>
+          <br />
+          <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   
         <asp:Label ID="Label2" runat="server" Text="Password:" class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">       
-          <asp:TextBox ID="TextBox2" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
+          <asp:TextBox ID="txtPass" runat="server" class="form-control" 
+              TextMode="Password" ></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">
@@ -46,7 +51,7 @@
               class="btn btn-primary" onclick="btnAgregar_Click"/>
       </div>
     </div>
-  </form>
+    </form>
 </div>
     </div>
     </form>

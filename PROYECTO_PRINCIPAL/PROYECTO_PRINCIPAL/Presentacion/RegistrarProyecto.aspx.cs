@@ -36,6 +36,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             string nombre = txtnombreproy.Text;
             string descr = txtdescripproy.Text;
             string progreso = txtprogresoproy.Text;
+            
 
             Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
             if (ng_proyecto.insertarProyecto(nombre, descr, progreso)>0)
