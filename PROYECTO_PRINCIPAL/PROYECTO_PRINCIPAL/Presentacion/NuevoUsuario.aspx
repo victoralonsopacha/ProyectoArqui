@@ -14,7 +14,15 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <div class="container">
+    <div class="container">
+    </div>
+        <div class="form-group row">   
+      <div class="col-sm-4">    
+      </div>
+    </div>
+    <div class="form-group row">   
+      <div class="col-sm-4">    
+      </div>
     </div>
     <div class="form-group row">   
         <asp:Label ID="Label1" runat="server" Text="Nombre:" class="col-sm-2 col-form-label"></asp:Label>
@@ -23,19 +31,16 @@
       </div>
     </div>
     <div class="form-group row">   
-        <asp:Label ID="Label3" runat="server" Text="UserName:" class="col-sm-2 col-form-label"></asp:Label>
-      <div class="col-sm-4">    
-          <asp:TextBox ID="txtUserName" runat="server" class="form-control"></asp:TextBox>
-      </div>
-    </div>
-    <div class="form-group row">   
         <asp:Label ID="Label4" runat="server" Text="Cedula:" 
             class="col-sm-2 col-form-label"></asp:Label>
       <div class="col-sm-4">    
-          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>
-          <asp:Label ID="Label5" runat="server" Text="Correo: "></asp:Label>
-          <br />
-          <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
+          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>        
+      </div>
+    </div>
+        <div class="form-group row">   
+       <asp:Label ID="Label5" runat="server" Text="Correo: " class="col-sm-2 col-form-label"></asp:Label>
+      <div class="col-sm-4">       
+          <asp:TextBox ID="txtCorreo" runat="server" class="form-control"></asp:TextBox>
       </div>
     </div>
     <div class="form-group row">   

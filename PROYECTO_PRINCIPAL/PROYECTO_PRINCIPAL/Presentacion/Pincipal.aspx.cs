@@ -11,7 +11,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nombre_usuario"] == null)
+            if (Session["nombre_usuario"] == null && Session["Usuario"]==null)
             {
                 Response.Redirect("Login.aspx");
             }

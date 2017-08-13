@@ -1,4 +1,6 @@
 create database BDDProyectoArqui
+go
+use BDDProyectoArqui
 
 /*==============================================================*/
 /* Table: ACTIVIDAD                                             */
@@ -54,11 +56,15 @@ go
 create table USUARIO (
    CEDULA               int                  not null,
    NOMBRE               varchar(30)          not null,
-   PASSWORD             int                  not null,
+   CONTRASEÑA           varchar(30)                  not null,
    CORREO               varchar(30)          not null,
    constraint PK_USUARIO primary key (CEDULA)
 )
 go
+
+
+
+
 
 
 alter table ACTIVIDAD
@@ -159,14 +165,4 @@ SELECT *FROM PROYECTO
 CREATE PROCEDURE eliminarProyecto
 (@ID  int)
 AS DELETE PROYECTO WHERE  ID =@ID
-
---PROCEDIMIENTO CONSULTAR POR ID
-CREATE PROCEDURE consultarProyectoPorID 
-		@ID int 
-	AS
-	SELECT * FROM PROYECTO 
-	WHERE ID= @ID
-
-
-
 

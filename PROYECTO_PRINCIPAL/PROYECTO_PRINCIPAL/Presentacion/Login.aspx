@@ -60,7 +60,7 @@
         <h1> Iniciar Sesión</h1>
         <br />
         <p> con tu cuenta de MeisterTask </p>    
-          <asp:TextBox ID="txtNombre" placeholder="Ingrese su usuario" runat="server" class="form-control"></asp:TextBox>
+          <asp:TextBox ID="txtNombre" placeholder="Ingrese su nombre" runat="server" class="form-control"></asp:TextBox>
 
     <br />  
                

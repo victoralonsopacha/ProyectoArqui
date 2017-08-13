@@ -32,6 +32,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             correo = txtCorreo.Text;
             cm_usuario = ng_usuario.registrarUsuario(cedula, nombre, contraseña, correo);          
             Session.Add("cedula_usuario", cedula);
+            Session.Add("contraseña_usuario", contraseña);
             Session.Add("nombre_usuario", nombre);
             Server.Transfer("Pincipal.aspx");
         }
