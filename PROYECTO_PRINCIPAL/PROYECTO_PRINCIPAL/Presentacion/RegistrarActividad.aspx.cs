@@ -15,15 +15,16 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] == null)
-            {
-                Response.Redirect("Login.aspx");
-            }
-
             if (!IsPostBack)
             {
                 ddlactividades.AutoPostBack = true;
             }
+            
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            
 
         }
         private void llenarlista()
@@ -82,7 +83,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         }
         
         }
-
+        /*
         protected void ddlactividades_SelectedIndexChanged(object sender, EventArgs e)
         {
             Ng_ClsActividad ng_actividad = new Ng_ClsActividad();
@@ -91,6 +92,8 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             mostrarActividad(obj_act);
         
         }
+        */
+
         private void mostrarActividad(Cm_ClsActividad actividad)
         {
             txtnombreact.Text = actividad.Nombre_act;
@@ -99,6 +102,15 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             txtfechainicio.Text = actividad.FechaInicio_act;
             txtfechafin.Text = actividad.FechaFin_act;
 
+        }
+
+        protected void ddlactividades_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            Ng_ClsActividad ng_actividad = new Ng_ClsActividad();
+            int id = Convert.ToInt16(ddlactividades.SelectedValue);
+            Cm_ClsActividad obj_act = ng_actividad.obtenerActividadId(id);
+            mostrarActividad(obj_act);
+        
         }
         }
 }

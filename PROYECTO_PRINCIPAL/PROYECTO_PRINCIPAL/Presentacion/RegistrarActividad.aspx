@@ -13,8 +13,7 @@
             </td>
             <td style="width: 191px">
                 <asp:DropDownList ID="ddlactividades" runat="server" 
-                    ontextchanged="ddlactividades_TextChanged" 
-                    onselectedindexchanged="ddlactividades_SelectedIndexChanged">
+                    onselectedindexchanged="ddlactividades_SelectedIndexChanged1">
                 </asp:DropDownList>
             </td>
             <td>
