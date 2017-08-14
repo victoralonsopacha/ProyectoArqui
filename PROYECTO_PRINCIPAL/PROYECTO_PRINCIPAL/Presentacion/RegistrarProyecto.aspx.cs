@@ -15,6 +15,10 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                ddlproyectos.AutoPostBack = true;
+            }
             if (Session["Usuario"] == null)
             {
                 Response.Redirect("Login.aspx");
@@ -23,10 +27,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             {
                 string valor= Convert.ToString(Session["Usuario"]);
             }
-            if (!IsPostBack)
-            {
-                ddlproyectos.AutoPostBack = true;
-            }
+            
         }
 
         private void llenarlista() {
