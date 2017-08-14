@@ -6,7 +6,7 @@ use BDDProyectoArqui
 /* Table: ACTIVIDAD                                             */
 /*==============================================================*/
 create table ACTIVIDAD (
-   ID                   int                  not null,
+   ID                   int      identity (1,1)            not null,
    CEDULA               int                  null,
    PRO_ID               int                  null,
    NOMBRE               varchar(50)          not null,
@@ -24,8 +24,9 @@ go
 /* Table: PROYECTO                                              */
 /*==============================================================*/
 create table PROYECTO (
+   
+   ID                   int      identity (1,1)             not null,
    CEDULA               int                  not null,
-   ID                   int                  not null,
    NOMBRE               varchar(30)          not null,
    DESCRIPCION          varchar(200)         null,
    PROGRESO             varchar(10)          not null,
@@ -39,7 +40,7 @@ go
 /* Table: TAREA                                                 */
 /*==============================================================*/
 create table TAREA (
-   ID                   int                  not null,
+   ID                   int      identity (1,1)             not null,
    ACT_ID               int                  null,
    NOMBRE               varchar(50)          not null,
    ESTADO               varchar(10)          not null,
@@ -130,17 +131,22 @@ WHERE cedula= @cedula
 exec buscarUsuario 1723427207
 
 
-
+select * from usuario
+select * from proyecto
 
 --PROCEDIMIENTO INSERTAR PROYECTO
-CREATE PROCEDURE insertarProyecto(
+create PROCEDURE insertarProyecto(
+@CEDULA int,
 @NOMBRE VARCHAR(30),
 @DESCRIPCION VARCHAR(200),
-@PROGRESO VARCHAR(10) 
+@PROGRESO VARCHAR(10)
+
 )as
-INSERT INTO PROYECTO(NOMBRE, DESCRIPCION, PROGRESO)
-VALUES (@NOMBRE, @DESCRIPCION, @PROGRESO )
+INSERT INTO PROYECTO(CEDULA,NOMBRE, DESCRIPCION, PROGRESO)
+VALUES (@CEDULA,@NOMBRE, @DESCRIPCION, @PROGRESO )
 SELECT *FROM PROYECTO
+
+exec insertarProyecto 1723427207,'Proyecto arquitectura web','final de semestre','start'
 
 --PROCEDIMIENTO CONSULTAR PROYECTO
 CREATE PROCEDURE consultarProyectos

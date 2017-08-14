@@ -61,7 +61,6 @@
     <Content Include="Presentacion\Imágenes\fondo2.jpg" />
     <Content Include="Presentacion\Imágenes\fondoprincipal.jpg" />
     <Content Include="Presentacion\Imágenes\logo.png" />
-    <Content Include="Presentacion\ListaDeProyectos.aspx" />
     <Content Include="Presentacion\Login.aspx" />
     <Content Include="Presentacion\NuevoUsuario.aspx" />
     <Content Include="Presentacion\Pincipal.aspx" />
@@ -147,13 +146,6 @@
     </Compile>
     <Compile Include="Presentacion\GestionDeTareas.master.designer.cs">
       <DependentUpon>GestionDeTareas.master</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\ListaDeProyectos.aspx.cs">
-      <DependentUpon>ListaDeProyectos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Presentacion\ListaDeProyectos.aspx.designer.cs">
-      <DependentUpon>ListaDeProyectos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

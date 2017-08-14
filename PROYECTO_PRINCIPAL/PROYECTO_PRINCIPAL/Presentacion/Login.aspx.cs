@@ -32,7 +32,8 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                                     </script>";
 
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "PROYECTOPRINCIPAL", mensaje, false);
-
+                Session.Add("Usuario", Dt_ClsUsuario.Cedula);
+                Response.Redirect("Pincipal.aspx");
             }
             else
             {
@@ -44,8 +45,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             }
 
 
-            Session.Add("Usuario", Dt_ClsUsuario.Cedula);
-            Response.Redirect("Pincipal.aspx");
+            
 
         }
 
