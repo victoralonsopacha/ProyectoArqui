@@ -88,10 +88,15 @@ namespace PROYECTO_PRINCIPAL.Datos
             return proyectos;
         } 
 
-        public int insertarProyecto(string nombre, string descr, string progreso)
+        public int insertarProyecto(int cedula,string nombre, string descr, string progreso)
         {
 
             List<DbParameter> parametros = new List<DbParameter>();
+
+            DbParameter param3 = factory.CreateParameter();
+            param3.Value = cedula;
+            param3.ParameterName = "CEDULA";
+            parametros.Add(param3);
 
             DbParameter param = factory.CreateParameter();
             param.Value = nombre;

@@ -15,6 +15,14 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                string valor= Convert.ToString(Session["Usuario"]);
+            }
             if (!IsPostBack)
             {
                 ddlproyectos.AutoPostBack = true;
@@ -36,10 +44,10 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             string nombre = txtnombreproy.Text;
             string descr = txtdescripproy.Text;
             string progreso = txtprogresoproy.Text;
-            
+            int cedula = Convert.ToInt32(Session["Usuario"]);
 
             Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
-            if (ng_proyecto.insertarProyecto(nombre, descr, progreso)>0)
+            if (ng_proyecto.insertarProyecto(cedula,nombre, descr, progreso)>0)
             {
             string mensaje = @"<script type='text/javascript'> alert('¡Proyecto Registrado!');
                                </script>";

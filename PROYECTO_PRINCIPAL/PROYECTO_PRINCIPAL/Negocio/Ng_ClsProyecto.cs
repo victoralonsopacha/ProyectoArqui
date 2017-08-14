@@ -16,10 +16,10 @@ namespace PROYECTO_PRINCIPAL.Negocio
             return dt_proy.listarProyectos();
         }
 
-        public int insertarProyecto(string nombre, string descr, string progreso)
+        public int insertarProyecto(int cedula,string nombre, string descr, string progreso)
         {
 
-            return dt_proy.insertarProyecto(nombre, descr, "NO COMENZADO");
+            return dt_proy.insertarProyecto(cedula,nombre, descr, "NO COMENZADO");
         }
 
         public int actualizarProyecto(int id, string nombre, string descr, string progreso)
