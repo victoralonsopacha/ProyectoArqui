@@ -13,6 +13,9 @@ namespace PROYECTO_PRINCIPAL.Presentacion
 {
     public partial class RegistrarProyecto : System.Web.UI.Page
     {
+        private static Cm_ClsUsuario cm_usuario = new Cm_ClsUsuario();
+        private static Ng_ClsUsuario ng_usuario = new Ng_ClsUsuario();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -25,7 +28,10 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             }
             else
             {
+               
+                
                 string valor= Convert.ToString(Session["Usuario"]);
+               
             }
             
         }
@@ -45,7 +51,11 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             string nombre = txtnombreproy.Text;
             string descr = txtdescripproy.Text;
             string progreso = txtprogresoproy.Text;
-            int cedula = Convert.ToInt32(Session["Usuario"]);
+
+            cm_usuario = ng_usuario.buscarUsuario(Convert.ToInt32(Session["Usuario"]));
+            int cedula= Convert.ToInt32( cm_usuario.Cedula.ToString());
+
+           
 
             Ng_ClsProyecto ng_proyecto = new Ng_ClsProyecto();
             if (ng_proyecto.insertarProyecto(cedula,nombre, descr, progreso)>0)
