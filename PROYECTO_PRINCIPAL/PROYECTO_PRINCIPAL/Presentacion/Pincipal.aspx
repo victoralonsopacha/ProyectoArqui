@@ -4,6 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" runat="server" 
     contentplaceholderid="contenidoPrincipal">
-    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtNombre" runat="server" Enabled="False"></asp:TextBox>
 </asp:Content>
 

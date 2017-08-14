@@ -31,6 +31,12 @@
       </div>
     </div>
     <div class="form-group row">   
+        <asp:Label ID="Label5" runat="server" Text="Cedula:" class="col-sm-2 col-form-label"></asp:Label>
+      <div class="col-sm-4">    
+          <asp:TextBox ID="txtCedula" runat="server" class="form-control"></asp:TextBox>
+      </div>
+    </div>
+    <div class="form-group row">   
       <div class="col-sm-4">    
       </div>
     </div>

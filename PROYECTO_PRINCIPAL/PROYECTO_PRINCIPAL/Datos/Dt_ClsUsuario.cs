@@ -169,6 +169,74 @@ namespace PROYECTO_PRINCIPAL.Datos
             return usuario;
         }
 
+        public Cm_ClsUsuario buscarUsuario(int cedula)
+        {
+            Cm_ClsUsuario usuario = new Cm_ClsUsuario();
+            string PROYECTO_PRINCIPAL = "buscarUsuario";
+            using (DbConnection conexion = factory.CreateConnection())
+            {
+                conexion.ConnectionString = cadena;
+                using (DbCommand comando = factory.CreateCommand())
+                {
+                    comando.Connection = conexion;
+                    comando.CommandText = PROYECTO_PRINCIPAL;
+                    comando.CommandType = CommandType.StoredProcedure;
+
+
+                    DbParameter param1 = comando.CreateParameter();
+                    param1.DbType = DbType.Int32;
+                    param1.ParameterName = "cedula";
+                    param1.Value = cedula;
+                    comando.Parameters.Add(param1);
+
+                    conexion.Open();
+
+                    using (DbDataReader lector = comando.ExecuteReader())
+                    {
+                        while (lector.Read())
+                        {
+                            usuario = new Cm_ClsUsuario(
+                                (int)lector["cedula"],
+                                (string)lector["nombre"],
+                                (string)lector["contraseña"],
+                                (string)lector["correo"]
+                                );
+                        }
+                    }
+                }
+            }
+            return usuario;
+        }
+
+        public int actualizarUsuario(int cedula, string nombre, string contraseña, string correo)
+        {
+            List<DbParameter> parametros = new List<DbParameter>();
+
+            DbParameter param0 = factory.CreateParameter();
+            param0.Value = cedula;
+            param0.ParameterName = "cedula";
+            parametros.Add(param0);
+
+            DbParameter param = factory.CreateParameter();
+            param.Value = nombre;
+            param.ParameterName = "nombre";
+            parametros.Add(param);
+
+            DbParameter param1 = factory.CreateParameter();
+            param1.Value = contraseña;
+            param1.ParameterName = "contraseña";
+            parametros.Add(param1);
+
+            DbParameter param2 = factory.CreateParameter();
+            param2.Value = correo;
+            param2.ParameterName = "correo";
+            parametros.Add(param2);
+
+            return ejecutarProcedimientos("actualizarUsuario", parametros);
+
+        }
+
+
 
     }
 

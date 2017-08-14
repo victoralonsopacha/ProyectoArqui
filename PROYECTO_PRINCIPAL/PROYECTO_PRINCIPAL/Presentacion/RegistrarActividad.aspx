@@ -64,7 +64,7 @@
                 <asp:Label ID="Label4" runat="server" Text="Fecha de inicio:"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:TextBox ID="txtfechainicio" runat="server" Width="296px"></asp:TextBox>
+                <asp:TextBox ID="txtfechainicio" runat="server" Width="296px" TextMode="Date"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -76,7 +76,7 @@
                 <asp:Label ID="Label5" runat="server" Text="Fecha de fin:"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:TextBox ID="txtfechafin" runat="server" Width="296px"></asp:TextBox>
+                <asp:TextBox ID="txtfechafin" runat="server" Width="296px" TextMode="Date"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>

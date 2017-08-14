@@ -116,6 +116,10 @@ update USUARIO
 set nombre=@nombre,contraseña=@contraseña,correo=@correo
 where cedula=@cedula
 
+select * from usuario
+
+
+
 --PROCEDIMIENTO BUSCARUSUARIO
 
 CREATE PROCEDURE buscarUsuario 

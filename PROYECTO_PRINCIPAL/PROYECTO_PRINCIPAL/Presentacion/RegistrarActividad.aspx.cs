@@ -15,7 +15,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nombre_usuario"] == null && Session["Usuario"] == null)
+            if (Session["Usuario"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
@@ -33,10 +33,6 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             ddlactividades.DataValueField = "id_act";
             ddlactividades.DataTextField = "nombre_act";
             ddlactividades.DataBind();
-
-
-        
-
         }
 
         protected void btnregistrar_Click(object sender, EventArgs e)

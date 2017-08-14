@@ -12,10 +12,8 @@ namespace PROYECTO_PRINCIPAL.Presentacion
 {
     public partial class EditarUsuario : System.Web.UI.Page
     {
-        private static string nombre;
-        private static string correo;
-        private static string contraseña;
         private static Cm_ClsUsuario cm_usuario = new Cm_ClsUsuario();
+        private static Ng_ClsUsuario ng_usuario = new Ng_ClsUsuario();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,16 +21,22 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             {
                 Response.Redirect("Login.aspx");
             }
-
-            contraseña = Session["Usuario"].ToString();
+            else
+            {
+                cm_usuario = ng_usuario.buscarUsuario(Convert.ToInt32(Session["Usuario"]));
+                txtCedula.Text = cm_usuario.Cedula.ToString();
+                txtNombre.Text = cm_usuario.Nombre.ToString();
+                txtEmail.Text = cm_usuario.Correo.ToString();
+                txtContraseña.Text = cm_usuario.Contraseña.ToString();
+            }           
         }
 
         
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-
-            Server.Transfer("Pincipal.aspx");
+            //cm_usuario = ng_usuario.actualizarUsuario(Convert.ToInt32(Session["Usuario"]), txtNombre.Text, txtContraseña.Text, txtEmail.Text);
+            Server.Transfer("Pincipal.aspx");            
         }
     }
 }
