@@ -176,3 +176,22 @@ CREATE PROCEDURE eliminarProyecto
 (@ID  int)
 AS DELETE PROYECTO WHERE  ID =@ID
 
+--PROCEDIMIENTO ASIGNAR_TAREA_A_ACTIVIDAD
+alter procedure insertarTareaEnActividad
+
+@ACT_ID int,
+@NOMBRE varchar(50),
+@ESTADO varchar(10),
+@FECHAINICIO varchar(12),
+@FECHAFIN varchar(12)
+as
+insert into TAREA(ACT_ID,NOMBRE,ESTADO,FECHAINICIO,FECHAFIN)
+values(@ACT_ID,@NOMBRE,@ESTADO,@FECHAINICIO,@FECHAFIN)
+
+select * from USUARIO
+select * from PROYECTO
+select * from ACTIVIDAD
+select * from TAREA
+
+exec insertarTareaEnActividad 1,'pensar el el modelo entidad','start','08/08/2017','09/08/2017'
+

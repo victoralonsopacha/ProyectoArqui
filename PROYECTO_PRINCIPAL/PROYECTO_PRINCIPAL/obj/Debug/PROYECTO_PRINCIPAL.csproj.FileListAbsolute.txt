@@ -23,3 +23,7 @@ C:\Users\pepe\Documents\ProyectoArquiWeb__FINALDESESTRE\PROYECTO_PRINCIPAL\PROYE
 C:\Users\pepe\Documents\ProyectoArquiWeb__FINALDESESTRE\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.dll
 C:\Users\pepe\Documents\ProyectoArquiWeb__FINALDESESTRE\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.pdb
 C:\Users\pepe\Documents\ProyectoArquiWeb__FINALDESESTRE\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.csprojResolveAssemblyReference.cache
+C:\Users\pepe\Documents\ProyectoArqui_mañanamartespresentar\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.dll
+C:\Users\pepe\Documents\ProyectoArqui_mañanamartespresentar\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\bin\PROYECTO_PRINCIPAL.pdb
+C:\Users\pepe\Documents\ProyectoArqui_mañanamartespresentar\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.dll
+C:\Users\pepe\Documents\ProyectoArqui_mañanamartespresentar\PROYECTO_PRINCIPAL\PROYECTO_PRINCIPAL\obj\Debug\PROYECTO_PRINCIPAL.pdb
