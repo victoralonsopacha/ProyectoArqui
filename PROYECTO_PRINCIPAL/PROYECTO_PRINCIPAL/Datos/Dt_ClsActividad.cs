@@ -95,35 +95,45 @@ namespace PROYECTO_PRINCIPAL.Datos
             return actividad;
         } 
 
-        public int insertarActividad(string nombre,string estado, string descr, string fechaInicio, string fechaFin)
+        public int insertarActividad(int cedula,int pro_id,string nombre,string estado, string descr, string fechaInicio, string fechaFin)
         {
 
             List<DbParameter> parametros = new List<DbParameter>();
 
-            DbParameter param = factory.CreateParameter();
-            param.Value = nombre;
-            param.ParameterName = "NOMBRE";
-            parametros.Add(param);
-
             DbParameter param1 = factory.CreateParameter();
-            param1.Value = estado;
-            param1.ParameterName = "ESTADO";
+            param1.Value = cedula;
+            param1.ParameterName = "CEDULA";
             parametros.Add(param1);
 
             DbParameter param2 = factory.CreateParameter();
-            param2.Value = descr;
-            param2.ParameterName = "DESCRIPCION";
+            param2.Value = pro_id;
+            param2.ParameterName = "PRO_ID";
             parametros.Add(param2);
 
+            DbParameter param3 = factory.CreateParameter();
+            param3.Value = nombre;
+            param3.ParameterName = "NOMBRE";
+            parametros.Add(param3);
+
             DbParameter param4 = factory.CreateParameter();
-            param4.Value = fechaInicio;
-            param4.ParameterName = "FECHAINICIO";
+            param4.Value = estado;
+            param4.ParameterName = "ESTADO";
             parametros.Add(param4);
 
             DbParameter param5 = factory.CreateParameter();
-            param5.Value = fechaInicio;
-            param5.ParameterName = "FECHAFIN";
+            param5.Value = descr;
+            param5.ParameterName = "DESCRIPCION";
             parametros.Add(param5);
+
+            DbParameter param6 = factory.CreateParameter();
+            param6.Value = fechaInicio;
+            param6.ParameterName = "FECHAINICIO";
+            parametros.Add(param6);
+
+            DbParameter param7 = factory.CreateParameter();
+            param7.Value = fechaInicio;
+            param7.ParameterName = "FECHAFIN";
+            parametros.Add(param7);
 
             return ejecutarProcedimientos("insertarActividad", parametros);
         
