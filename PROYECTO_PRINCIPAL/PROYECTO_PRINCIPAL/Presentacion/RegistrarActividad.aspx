@@ -16,10 +16,14 @@
                     onselectedindexchanged="ddlactividades_SelectedIndexChanged1">
                 </asp:DropDownList>
             </td>
+            <td style="width: 188px">
+                <asp:Label ID="Label7" runat="server" Text="Seleccionar Proyecto:"></asp:Label>
+            </td>
             <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
+                <asp:DropDownList ID="ddlProyecto" runat="server" 
+                    onselectedindexchanged="ddlProyecto_SelectedIndexChanged">
+                </asp:DropDownList>
+            </td>
         </tr>
         
         <tr>
@@ -29,7 +33,7 @@
             <td style="width: 191px">
                 <asp:TextBox ID="txtnombreact" runat="server" Width="296px"></asp:TextBox>
             </td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -41,7 +45,7 @@
             <td style="width: 191px">
                 <asp:TextBox ID="txtestadoact" runat="server" Width="296px"></asp:TextBox>
             </td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -53,7 +57,7 @@
             <td style="width: 191px">
                 <asp:TextBox ID="txtdescripact" runat="server" Height="27px" Width="295px"></asp:TextBox>
             </td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -65,7 +69,7 @@
             <td style="width: 191px">
                 <asp:TextBox ID="txtfechainicio" runat="server" Width="296px" TextMode="Date"></asp:TextBox>
             </td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -77,7 +81,7 @@
             <td style="width: 191px">
                 <asp:TextBox ID="txtfechafin" runat="server" Width="296px" TextMode="Date"></asp:TextBox>
             </td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -87,7 +91,7 @@
                 &nbsp;</td>
             <td style="width: 191px">
                 &nbsp;</td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -109,7 +113,7 @@
                 &nbsp;</td>
             <td style="width: 191px">
                 &nbsp;</td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -119,7 +123,7 @@
                 &nbsp;</td>
             <td style="width: 191px">
                 &nbsp;</td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -129,7 +133,7 @@
                 &nbsp;</td>
             <td style="width: 191px">
                 &nbsp;</td>
-            <td>
+            <td style="width: 188px">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>

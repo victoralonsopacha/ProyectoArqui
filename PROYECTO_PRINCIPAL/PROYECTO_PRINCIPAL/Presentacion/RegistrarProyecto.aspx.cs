@@ -41,9 +41,7 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             ddlproyectos.DataSource = ng_proyecto.ObtenerProyectos();
             ddlproyectos.DataValueField = "id_proy";
             ddlproyectos.DataTextField = "nombre_proy";
-            ddlproyectos.DataBind();
-        
-        
+            ddlproyectos.DataBind();       
         }
 
         protected void btnregistrar_Click(object sender, EventArgs e)

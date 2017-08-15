@@ -16,10 +16,10 @@ namespace PROYECTO_PRINCIPAL.Negocio
             return dt_act.listarActividad();
         }
 
-        public int insertarActividad(string nombre,string estado, string descr, string fechaInicio, string fechaFin)
+        public int insertarActividad(int cedula, int pro_id,string nombre,string estado, string descr, string fechaInicio, string fechaFin)
         {
 
-            return dt_act.insertarActividad(nombre,"ABIERTA", descr, fechaInicio, fechaFin);
+            return dt_act.insertarActividad(cedula,pro_id,nombre,"ABIERTA", descr, fechaInicio, fechaFin);
         }
 
 
