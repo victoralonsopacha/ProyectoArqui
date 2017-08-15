@@ -194,6 +194,20 @@ select * from PROYECTO
 select * from ACTIVIDAD
 select * from TAREA
 
+--PROCEDIMIENTO ELIMINAR_TAREA
+create procedure eliminarTarea
+@ID  int
+AS 
+DELETE TAREA WHERE  ID =@ID
+
+--CONSULTAR TAREA_POR_ID
+
+CREATE PROCEDURE consultarTareaPorId
+@ID int 
+AS
+SELECT * FROM TAREA 
+WHERE ID= @ID
+
 delete USUARIO
 delete PROYECTO
 delete ACTIVIDAD

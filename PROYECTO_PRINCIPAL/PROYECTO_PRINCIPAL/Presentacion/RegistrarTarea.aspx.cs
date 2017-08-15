@@ -41,10 +41,10 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             string fechaF = txtfechafin.Text;
 
             cm_tarea = ng_tarea.obtenerActividadId(Convert.ToInt32(Session["Usuario"]));
-            int act_id = Convert.ToInt32(cm_tarea.Id_act.ToString());
+            //int act_id = Convert.ToInt32(cm_tarea.Id_act.ToString());
 
             Ng_ClsTarea tarea = new Ng_ClsTarea();
-
+            int act_id = Convert.ToInt32(txtIdActividad.Text);
             if (tarea.insertarTareaEnActividad(act_id,nombre,estado,fechaI,fechaF)>0)
             {
                 string mensaje = @"<script type='text/javascript'> alert('¡Tarea Registrada!');

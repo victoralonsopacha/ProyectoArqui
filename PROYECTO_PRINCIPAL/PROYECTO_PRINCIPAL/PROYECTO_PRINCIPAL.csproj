@@ -56,7 +56,7 @@
     <Content Include="Presentacion\EditarUsuario.aspx" />
     <Content Include="Presentacion\EliminarActividad.aspx" />
     <Content Include="Presentacion\VerProyecto.aspx" />
-    <Content Include="Presentacion\EliminarTarea.aspx" />
+    <Content Include="Presentacion\VerTareas.aspx" />
     <Content Include="Presentacion\CSS\Estilos.css" />
     <Content Include="Presentacion\Imágenes\fondo2.jpg" />
     <Content Include="Presentacion\Imágenes\fondoprincipal.jpg" />
@@ -119,12 +119,12 @@
     <Compile Include="Presentacion\VerProyecto.aspx.designer.cs">
       <DependentUpon>VerProyecto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\EliminarTarea.aspx.cs">
-      <DependentUpon>EliminarTarea.aspx</DependentUpon>
+    <Compile Include="Presentacion\VerTareas.aspx.cs">
+      <DependentUpon>VerTareas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\EliminarTarea.aspx.designer.cs">
-      <DependentUpon>EliminarTarea.aspx</DependentUpon>
+    <Compile Include="Presentacion\VerTareas.aspx.designer.cs">
+      <DependentUpon>VerTareas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\GestionDeActividades.master.cs">
       <DependentUpon>GestionDeActividades.master</DependentUpon>

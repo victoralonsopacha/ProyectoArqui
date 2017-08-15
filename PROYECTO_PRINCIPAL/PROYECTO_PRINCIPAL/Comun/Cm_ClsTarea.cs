@@ -58,23 +58,23 @@ namespace PROYECTO_PRINCIPAL.Comun
 
         #region constructores
 
-        public Cm_ClsTarea(int id,string nombre,string estado,string descripcion,string fechainicio,string fechafin)
+        public Cm_ClsTarea(int id,string nombre,string estado,string fechainicio,string fechafin)
         {
             this.id = id;
             this.nombre = nombre;
             this.estado = estado;
-            this.descripcion = descripcion;
+         
             this.fechainicio = fechainicio;
             this.fechafin = fechafin;
         }
-        public Cm_ClsTarea(int id,int act_id, string nombre, string estado, string descripcion, string fechainicio, string fechafin)
+        public Cm_ClsTarea(int id,int act_id, string nombre, string estado,  string fechainicio, string fechafin)
         {
             
             this.id = id;
             this.act_id = act_id;
             this.nombre = nombre;
             this.estado = estado;
-            this.descripcion = descripcion;
+           
             this.fechainicio = fechainicio;
             this.fechafin = fechafin;
         }
