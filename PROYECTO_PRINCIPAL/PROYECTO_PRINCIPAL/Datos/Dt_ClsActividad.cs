@@ -140,33 +140,6 @@ namespace PROYECTO_PRINCIPAL.Datos
         } 
 
 
-     /*public int actualizarProyecto(int id, string nombre, string descr, string progreso)
-        {
-            List<DbParameter> parametros = new List<DbParameter>();
-
-            DbParameter param0 = factory.CreateParameter();
-            param0.Value = id;
-            param0.ParameterName = "ID";
-            parametros.Add(param0);
-
-            DbParameter param = factory.CreateParameter();
-            param.Value = nombre;
-            param.ParameterName = "NOMBRE";
-            parametros.Add(param);
-
-            DbParameter param1 = factory.CreateParameter();
-            param1.Value = descr;
-            param1.ParameterName = "DESCRIPCION";
-            parametros.Add(param1);
-
-            DbParameter param4 = factory.CreateParameter();
-            param4.Value = progreso;
-            param4.ParameterName = "PROGRESO";
-            parametros.Add(param4);
-
-            return ejecutarProcedimientos("actualizarProyecto", parametros);
-            
-        }*/
 
 
      public Cm_ClsActividad listarActividadPorId(int id)
