@@ -12,8 +12,17 @@
                 <asp:Label ID="Label6" runat="server" Text="Seleccionar actividad:"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:DropDownList ID="ddlactividades" runat="server">
+                <asp:DropDownList ID="ddlactividades" runat="server" 
+                    DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="NOMBRE">
                 </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:BDDProyectoArquiConnectionString %>" 
+                    SelectCommand="SELECT [NOMBRE] FROM [ACTIVIDAD] WHERE ([PRO_ID] = @PRO_ID)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="txtIdProyecto" Name="PRO_ID" 
+                            PropertyName="Text" Type="Int32" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             </td>
             <td style="width: 188px">
                 <asp:Label ID="Label7" runat="server" Text="Seleccionar Proyecto:"></asp:Label>
