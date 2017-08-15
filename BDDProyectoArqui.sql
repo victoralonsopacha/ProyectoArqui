@@ -176,7 +176,7 @@ CREATE PROCEDURE eliminarProyecto
 (@ID  int)
 AS DELETE PROYECTO WHERE  ID =@ID
 
-<<<<<<< HEAD
+
 --PROCEDIMIENTO ASIGNAR_TAREA_A_ACTIVIDAD
 create procedure insertarTareaEnActividad
 
@@ -215,7 +215,7 @@ delete TAREA
 
 exec insertarTareaEnActividad 2,'pensar el el modelo entidad','start','08/08/2017','09/08/2017'
 
-=======
+
 --PROCEDIMIENTO INSERTAR ACTIVIDAD
 CREATE PROCEDURE insertarActividad(
 @CEDULA int,
@@ -255,4 +255,6 @@ SELECT ID FROM PROYECTO
 WHERE CEDULA=@CEDULA
 
 EXEC buscarIdProyectoPorCedula 1723427207
->>>>>>> bb854cac7154d969b520217b0d7f3c001c8eaf8d
+
+
+
