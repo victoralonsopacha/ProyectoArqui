@@ -214,22 +214,22 @@ namespace PROYECTO_PRINCIPAL.Datos
 
             DbParameter param0 = factory.CreateParameter();
             param0.Value = cedula;
-            param0.ParameterName = "cedula";
+            param0.ParameterName = "CEDULA";
             parametros.Add(param0);
 
             DbParameter param = factory.CreateParameter();
             param.Value = nombre;
-            param.ParameterName = "nombre";
+            param.ParameterName = "NOMBRE";
             parametros.Add(param);
 
             DbParameter param1 = factory.CreateParameter();
             param1.Value = contraseña;
-            param1.ParameterName = "contraseña";
+            param1.ParameterName = "CONTRASEÑA";
             parametros.Add(param1);
 
             DbParameter param2 = factory.CreateParameter();
             param2.Value = correo;
-            param2.ParameterName = "correo";
+            param2.ParameterName = "CORREO";
             parametros.Add(param2);
 
             return ejecutarProcedimientos("actualizarUsuario", parametros);

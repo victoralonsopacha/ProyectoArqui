@@ -22,8 +22,8 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             }
             else
             {
-                cm_usuario=ng_usuario.buscarUsuario(Convert.ToInt32(Session["Usuario"]));
-                txtNombre.Text = "Bienvenido: " + cm_usuario.Nombre.ToString();
+                //cm_usuario=ng_usuario.buscarUsuario(Convert.ToInt32(Session["Usuario"]));
+               // txtNombre.Text = "Bienvenido: " + cm_usuario.Nombre.ToString();
                 
             }
         }
