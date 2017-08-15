@@ -17,6 +17,62 @@
                 &nbsp;</td>
         </tr>
         
+                <tr>
+            <td style="width: 236px">
+                &nbsp;</td>
+            <td style="width: 191px">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        
+                <tr>
+            <td style="width: 236px">
+                <asp:Label ID="Label8" runat="server" Text="Escoga una tarea:"></asp:Label>
+                    </td>
+            <td style="width: 191px">
+                <asp:DropDownList ID="ddlTarea" runat="server" DataSourceID="SqlDataSource2" 
+                    DataTextField="NOMBRE" DataValueField="NOMBRE">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:BDDProyectoArquiConnectionString %>" 
+                    SelectCommand="SELECT [NOMBRE] FROM [TAREA] WHERE ([ACT_ID] = @ACT_ID)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="txtIdActividad" Name="ACT_ID" 
+                            PropertyName="Text" Type="Int32" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
+                    </td>
+            <td>
+                <asp:Label ID="Label7" runat="server" Text="Eliga la Actividad:"></asp:Label>
+                    </td>
+            <td>
+                <asp:DropDownList ID="ddlActividad" runat="server" 
+                    DataSourceID="SqlDataSource1" DataTextField="NOMBRE" DataValueField="NOMBRE" 
+                    onselectedindexchanged="ddlActividad_SelectedIndexChanged">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:BDDProyectoArquiConnectionString %>" 
+                    SelectCommand="SELECT [NOMBRE] FROM [ACTIVIDAD] ORDER BY [ID]">
+                </asp:SqlDataSource>
+                    </td>
+        </tr>
+        
+                <tr>
+            <td style="width: 236px">
+                <asp:Label ID="Label6" runat="server" Text="Id de la Actividad:"></asp:Label>
+                    </td>
+            <td style="width: 191px">
+                <asp:TextBox ID="txtIdActividad" runat="server" Enabled="False"></asp:TextBox>
+                    </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        
         <tr>
             <td style="width: 236px">
                 <asp:Label ID="Label1" runat="server" Text="Nombre de la tarea:"></asp:Label>
@@ -35,19 +91,6 @@
             </td>
             <td style="width: 191px">
                 <asp:TextBox ID="txtEstadoTarea" runat="server" Width="296px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 236px">
-                <asp:Label ID="Label2" runat="server" Text="Descripción:"></asp:Label>
-            </td>
-            <td style="width: 191px">
-                <asp:TextBox ID="txtDescripcionTarea" runat="server" Height="27px" 
-                    Width="295px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>

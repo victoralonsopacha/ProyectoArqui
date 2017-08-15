@@ -178,7 +178,7 @@ AS DELETE PROYECTO WHERE  ID =@ID
 
 
 --PROCEDIMIENTO ASIGNAR_TAREA_A_ACTIVIDAD
-alter procedure insertarTareaEnActividad
+create procedure insertarTareaEnActividad
 
 @ACT_ID int,
 @NOMBRE varchar(50),
@@ -242,5 +242,6 @@ WHERE CEDULA=@CEDULA
 
 EXEC buscarIdProyectoPorCedula 1723427207
 
-
+--permite reiniciar los campos identity
+DBCC CHECKIDENT (tarea, RESEED, 0)
 

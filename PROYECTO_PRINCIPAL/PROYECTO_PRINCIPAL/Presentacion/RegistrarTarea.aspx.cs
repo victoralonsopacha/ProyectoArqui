@@ -22,12 +22,20 @@ namespace PROYECTO_PRINCIPAL.Presentacion
                 Response.Redirect("Login.aspx");
             }
 
+            if (!IsPostBack)
+            {
+                ddlActividad.AutoPostBack = true;
+                ddlTarea.AutoPostBack = true;
+            }
+
         }
+
+
 
         protected void btnregistrar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombreTarea.Text;
-            //string descripcion = txtDescripcionTarea.Text;
+            
             string estado = txtEstadoTarea.Text;
             string fechaI = txtfechainicio.Text;
             string fechaF = txtfechafin.Text;
@@ -51,6 +59,14 @@ namespace PROYECTO_PRINCIPAL.Presentacion
         {
 
         }
+
+        protected void ddlActividad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id_actividad = Convert.ToInt32(ddlActividad.SelectedIndex + 1);
+            txtIdActividad.Text = Convert.ToString(id_actividad);
+        }
+
+
 
     }
 }

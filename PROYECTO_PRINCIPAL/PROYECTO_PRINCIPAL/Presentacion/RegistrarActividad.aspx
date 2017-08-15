@@ -44,7 +44,7 @@
                 <asp:Label ID="Label8" runat="server" Text="Id Proyecto"></asp:Label>
             </td>
             <td style="width: 191px">
-                <asp:TextBox ID="txtIdProyecto" runat="server" Width="293px"></asp:TextBox>
+                <asp:TextBox ID="txtIdProyecto" runat="server" Width="293px" Enabled="False"></asp:TextBox>
             </td>
             <td style="width: 188px">
                 &nbsp;</td>
