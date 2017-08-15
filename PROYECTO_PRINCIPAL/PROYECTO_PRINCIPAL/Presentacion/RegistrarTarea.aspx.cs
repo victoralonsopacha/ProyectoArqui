@@ -12,6 +12,9 @@ namespace PROYECTO_PRINCIPAL.Presentacion
 {
     public partial class RegistrarTarea : System.Web.UI.Page
     {
+        private static Cm_ClsActividad cm_tarea = new Cm_ClsActividad();
+        private static Ng_ClsActividad ng_tarea = new Ng_ClsActividad();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Usuario"] == null)
@@ -29,8 +32,12 @@ namespace PROYECTO_PRINCIPAL.Presentacion
             string fechaI = txtfechainicio.Text;
             string fechaF = txtfechafin.Text;
 
-            Ng_ClsTarea ng_tarea = new Ng_ClsTarea();
-            if (ng_tarea.insertarTareaEnActividad(act_id,nombre,estado,fechaI,fechaF)>0)
+            cm_tarea = ng_tarea.obtenerActividadId(Convert.ToInt32(Session["Usuario"]));
+            int act_id = Convert.ToInt32(cm_tarea.Id_act.ToString());
+
+            Ng_ClsTarea tarea = new Ng_ClsTarea();
+
+            if (tarea.insertarTareaEnActividad(act_id,nombre,estado,fechaI,fechaF)>0)
             {
                 string mensaje = @"<script type='text/javascript'> alert('¡Tarea Registrada!');
                                </script>";

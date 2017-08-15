@@ -194,7 +194,12 @@ select * from PROYECTO
 select * from ACTIVIDAD
 select * from TAREA
 
-exec insertarTareaEnActividad 1,'pensar el el modelo entidad','start','08/08/2017','09/08/2017'
+delete USUARIO
+delete PROYECTO
+delete ACTIVIDAD
+delete TAREA
+
+exec insertarTareaEnActividad 2,'pensar el el modelo entidad','start','08/08/2017','09/08/2017'
 
 =======
 --PROCEDIMIENTO INSERTAR ACTIVIDAD
@@ -211,6 +216,7 @@ INSERT INTO ACTIVIDAD(CEDULA,PRO_ID,NOMBRE,ESTADO, DESCRIPCION, FECHAINICIO,FECH
 VALUES (@CEDULA,@PRO_ID,@NOMBRE,@ESTADO, @DESCRIPCION, @FECHAINICIO, @FECHAFIN )
 
 SELECT *FROM ACTIVIDAD
+exec insertarActividad 1723427207,13,'Crear base de datos','start','empezar a pensar en la BD','08/08/2017','08/09/2017'
 
 --PROCEDIMIENTO ELIMINAR ACTIVIDAD
 CREATE PROCEDURE eliminarActividad
@@ -219,10 +225,12 @@ AS DELETE ACTIVIDAD WHERE  ID =@ID
 
 --PROCEDIMIENTO CONSULTAR POR ID ACTIVIDAD
 CREATE PROCEDURE consultarActividadPorID 
-		@ID int 
+	@ID int 
 	AS
 	SELECT * FROM ACTIVIDAD 
 	WHERE ID= @ID
+	
+exec consultarActividadPorID 2
 	
 	
 --PROCEDIMIENTO PARA BUSCAR EL ID DEL PROYECTO POR LA CEDULA DEL USUARIO
@@ -232,5 +240,5 @@ AS
 SELECT ID FROM PROYECTO
 WHERE CEDULA=@CEDULA
 
-EXEC buscarIdProyectoPorCedula 1717267593
+EXEC buscarIdProyectoPorCedula 1723427207
 >>>>>>> bb854cac7154d969b520217b0d7f3c001c8eaf8d

@@ -96,5 +96,47 @@ namespace PROYECTO_PRINCIPAL.Datos
             return ejecutarProcedimientos("insertarTareaEnActividad", parametros);
 
         } 
+         public Cm_ClsActividad listarActividadPorId(int id)
+     {
+
+         Cm_ClsActividad obj_act = new Cm_ClsActividad();
+
+         string procedimiento = "consultarActividadPorID";
+
+         using (DbConnection con = factory.CreateConnection())
+         {
+
+             con.ConnectionString = cadena;
+
+             using (DbCommand cmd = factory.CreateCommand())
+             {
+
+                 cmd.Connection = con;
+                 cmd.CommandText = procedimiento;
+                 cmd.CommandType = CommandType.StoredProcedure;
+
+                 DbParameter param = cmd.CreateParameter();
+                 param.DbType = DbType.Int32;
+                 param.ParameterName = "ID";
+                 param.Value = id;
+
+                 cmd.Parameters.Add(param);
+                 con.Open();
+
+                 using (DbDataReader dr = cmd.ExecuteReader())
+                 {
+                     if (dr.Read())
+                     {
+                         obj_act = new Cm_ClsActividad((int)dr["ID"], (string)dr["NOMBRE"], (string)dr["ESTADO"],
+                             (string)dr["DESCRIPCION"], (string)dr["FECHAINICIO"], (string)dr["FECHAFIN"]);
+
+                     }
+                 }
+
+             }
+
+         }
+         return obj_act;
+     }
     }
 }
