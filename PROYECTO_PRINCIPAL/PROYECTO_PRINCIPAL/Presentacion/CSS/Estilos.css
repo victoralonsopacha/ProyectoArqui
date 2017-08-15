@@ -1,6 +1,10 @@
 ﻿body 
 {
-    background-image: Imágenes\fondoprincipal.jpg;
+    background: background-image : url(Imágenes\fondoprincipal.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 

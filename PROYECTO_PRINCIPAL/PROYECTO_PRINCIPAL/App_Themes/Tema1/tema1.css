@@ -5,8 +5,8 @@
 
 #cabecera
 {
-    height:170px;
-    background-color:cornsilk;
+    height:140px;
+    background-color:#a7c9ea;
     color:Black;    
     border:1px;
     box-shadow:0px 0px 10px #000;
@@ -91,9 +91,11 @@
 
 #menuContextual
 {
+  
     list-style-type:none;
     padding:0;
     margin:0;
+    background-color:Navy;
     } 
   
 #menuContextual > li
@@ -117,7 +119,7 @@
     float:left;
     width:70%;
     min-height:500px;
-    background-image:url("fondo.png");
+    background-color: White;
     box-shadow:0px 0px 5px #000 inset;
     }
     
