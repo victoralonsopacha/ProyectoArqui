@@ -10,16 +10,16 @@
 namespace PROYECTO_PRINCIPAL.Presentacion {
     
     
-    public partial class EliminarProyecto {
+    public partial class EliminarTarea {
         
         /// <summary>
-        /// Control grvproyectos.
+        /// Control grvtareas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvproyectos;
+        protected global::System.Web.UI.WebControls.GridView grvtareas;
         
         /// <summary>
         /// Control SqlDataSource1.

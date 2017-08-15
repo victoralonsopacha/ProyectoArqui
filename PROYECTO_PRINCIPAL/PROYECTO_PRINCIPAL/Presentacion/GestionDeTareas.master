@@ -5,7 +5,7 @@
  <ul id="menuContextual">
         <li><a href="RegistrarTarea.aspx">Registrar Tarea</a></li>
         <li><a href="AsignarTarea.aspx">Asignar Tarea</a></li>
-        <li><a href="EliminarTarea.aspx">Eliminar Tarea</a></li>
+        <li><a href="VerTareas.aspx">Ver Tareas</a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="server">

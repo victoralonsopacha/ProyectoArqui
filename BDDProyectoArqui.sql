@@ -178,7 +178,7 @@ AS DELETE PROYECTO WHERE  ID =@ID
 
 <<<<<<< HEAD
 --PROCEDIMIENTO ASIGNAR_TAREA_A_ACTIVIDAD
-alter procedure insertarTareaEnActividad
+create procedure insertarTareaEnActividad
 
 @ACT_ID int,
 @NOMBRE varchar(50),
@@ -193,6 +193,20 @@ select * from USUARIO
 select * from PROYECTO
 select * from ACTIVIDAD
 select * from TAREA
+
+--PROCEDIMIENTO ELIMINAR_TAREA
+create procedure eliminarTarea
+@ID  int
+AS 
+DELETE TAREA WHERE  ID =@ID
+
+--CONSULTAR TAREA_POR_ID
+
+CREATE PROCEDURE consultarTareaPorId
+@ID int 
+AS
+SELECT * FROM TAREA 
+WHERE ID= @ID
 
 delete USUARIO
 delete PROYECTO
